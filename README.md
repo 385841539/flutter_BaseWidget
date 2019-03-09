@@ -1,6 +1,7 @@
 # flutter_base_widget
 
-BaseWidget
+BaseWidget使用效果图
+
 
 
 # 博客介绍
@@ -20,54 +21,30 @@ CSDN:[https://blog.csdn.net/iamdingruihaha/article/details/88319883](https://blo
 
 
 # Usage
-
-
-
 | 方法      	 		|    参数         	| 说明  					|
 | ------------------------- |------------------ | --------------------- |
-| onCreate()				| int y 			|可见文本数，默认为5|
-| onResume()	| float y      	    |被选中文字大小|
-| onPause()				|Color color    	|被选中文字颜色|
-| onDestory()			|  float y | 未被选中文字大小|
-| setTopBarVisible|Color color | 未被选中文字颜色|
-| setTopBarBackColor|Color color | 未被选中文字颜色|
-
-| setAppBarVisible|Color color | 未被选中文字颜色|
-
-| setAppBarContentColor|Color color | 未被选中文字颜色|
-
-| setAppBarBackColor|Color color | 未被选中文字颜色|
-
-| setErrorContent|Color color | 未被选中文字颜色|
-
-| setErrorWidgetVisible|Color color | 未被选中文字颜色|
-| setEmptyWidgetVisible|Color color | 未被选中文字颜色|
-
-| setLoadingWidgetVisible|Color color | 未被选中文字颜色|
-
-| setEmptyWidgetContent|Color color | 未被选中文字颜色|
-| setErrorImage|Color color | 未被选中文字颜色|
-| setEmptyImage|Color color | 未被选中文字颜色|
-| setEmptyWidgetContent|Color color | 未被选中文字颜色|
+| onCreate()				| 无			|页面创建会走到的方法|
+| onResume()	| 无     	    |页面只要来到用户视野就会走到的方法|
+| onPause()				| 无     	    |页面只要离开用户视野就会走到的方法|
+| onDestory()			|  无| 页面销毁走到的方法|
+| setTopBarVisible|bool isVisible | 显示或者隐藏状态栏|
+| setTopBarBackColor|Color color | 状态栏背景颜色|
+| setAppBarVisible|bool isVisible | 显示或者隐藏导航栏|
+| setAppBarBackColor|Color color | 导航栏背景颜色|
+| setAppBarContentColor|Color color | 导航栏文字颜色|
+|setAppBarTitle|String title|设置导航栏中间大标题|
+|setAppBarRightTitle|String title|设置导航栏右边小标题|
+|setBackIconHinde|bool|导航栏中隐藏返回键|
+| setErrorWidgetVisible|bool isVisible |设置错误布局是否显示|
+| setErrorContent|String content | 设置错误布局的内容提示|
+| setErrorImage|String path|设置错误布局的占位图|
+| setEmptyWidgetContent|String content|设置空布局的内容提示|
+| setEmptyWidgetVisible|bool isVisible |设置空布局是否显示|
+| setEmptyImage|String path|设置空布局的占位图|
+| setLoadingWidgetVisible|bool isVisible |设置loading布局是否显示|
 
 
-
-
-
-
-用到的动态方法
-```java
-
-    hsMain.setData(strings);//设置数据源
-   
-    hsMain.setAnLeftOffset();//向左移动一个单元
-    
-    hsMain.setAnRightOffset();//向右移动一个单元
-    
-    hsMain.getSelectedString();//获得被选中的文本
-    
-    
-```
+<b>当然如果觉得这些内置布局不是很符合需求，都可以重写对应的方法，让子类自己完善方法。</br>
 
 ## Tips
-  很简单的使用方法，不熟悉自定义View的小伙伴可以跟着敲一遍，巩固自定义View。
+  实现思路和方法很简单，作为入门级的封装还是可以的，献丑了！
