@@ -2,6 +2,7 @@
 
 BaseWidget使用效果图
 
+<img  src="https://img-blog.csdnimg.cn/20190309103700606.gif" />
 
 
 # 博客介绍
