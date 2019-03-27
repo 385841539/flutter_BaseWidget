@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_base_widget/base/NavigatorManger.dart';
+import 'package:flutter_base_widget/network/api.dart';
 
 abstract class BaseWidget extends StatefulWidget {
   BaseWidgetState baseWidgetState;
@@ -122,7 +123,11 @@ abstract class BaseWidgetState<T extends BaseWidget> extends State<T>
     WidgetsBinding.instance.removeObserver(this);
     _onResumed = false;
     _onPause = false;
+
+    //把改页面 从 页面列表中 去除
     NavigatorManger().removeWidget(this);
+    //取消网络请求
+    HttpManager.cancelHttp(getClassName());
     super.dispose();
   }
 
