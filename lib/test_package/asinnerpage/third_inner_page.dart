@@ -22,6 +22,8 @@ class ThirdInnerPage extends BaseInnerWidget {
 }
 
 class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
+  String _requestData = "";
+
   @override
   void onCreate() {
     // TODO: implement initOnceData
@@ -68,9 +70,10 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
         RaisedButton(
           child: Text("模拟请求登录"),
           onPressed: () {
-            requestLogin(1);
+            requestLogin();
           },
         ),
+        Text(_requestData),
         RaisedButton(
           child: Text("模拟错误请求"),
           onPressed: () {
@@ -81,15 +84,18 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
     );
   }
 
-  void requestLogin(int i) {
+  void requestLogin() {
     RequestMap.requestLogin(this, null).listen((da) {
       List<LoginResponseResult> lists = da.results;
+      String stringBuffer = "请求结果:\n"; //不推荐用+拼接字符串，这里只是展示
       for (int i = 0; i < lists.length; i++) {
-        log(lists[i].icon);
+        stringBuffer = stringBuffer + "\n" + lists[i].id;
       }
-    }, onError: (err) {
-      log("errrr----${err.toString()}----${i}");
-    });
+      setState(() {
+        _requestData = stringBuffer;
+        setErrorWidgetVisible(false);
+      });
+    }, onError: (err) {});
   }
 
   void requestErrorRequest() {
@@ -97,5 +103,11 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
       print(err.message);
       setErrorWidgetVisible(true);
     });
+  }
+
+  @override
+  void onClickErrorWidget() {
+    requestLogin();
+    super.onClickErrorWidget();
   }
 }
