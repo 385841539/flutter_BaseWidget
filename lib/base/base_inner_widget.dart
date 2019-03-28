@@ -97,7 +97,7 @@ abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
   void dispose() {
     // TODO: implement dispose
     onDestory();
-    HttpManager.cancelHttp(getClassName());
+    HttpManager.cancelHttp(getClassName()); //取消网络请求
     super.dispose();
   }
 

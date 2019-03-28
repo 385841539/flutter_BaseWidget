@@ -82,13 +82,13 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
   }
 
   void requestLogin(int i) {
-    RequestMap.requestLogin().listen((da) {
+    RequestMap.requestLogin(this, null).listen((da) {
       List<LoginResponseResult> lists = da.results;
       for (int i = 0; i < lists.length; i++) {
-        print(lists[i].icon);
+        log(lists[i].icon);
       }
     }, onError: (err) {
-      print("errrr----${err.toString()}----${i}");
+      log("errrr----${err.toString()}----${i}");
     });
   }
 

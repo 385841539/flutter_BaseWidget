@@ -30,54 +30,48 @@ class HttpManager {
   }
 
   //get请求
-  PublishSubject<T> get<T>(
-    String url, {
-    Map<String, dynamic> queryParameters,
-    BaseWidgetState baseWidgetState,
-    BaseInnerWidgetState baseInnerWidgetState,
-  }) {
-    return _requstHttp<T>(
-        url, true, queryParameters, baseWidgetState, baseInnerWidgetState);
+  PublishSubject<T> get<T>(String url,
+      {Map<String, dynamic> queryParameters,
+      BaseWidgetState baseWidgetState,
+      BaseInnerWidgetState baseInnerWidgetState,
+      bool isCancelable = true,
+      bool isShowLoading = true,
+      bool isSHowErrorToast = true}) {
+    return _requstHttp<T>(url, true, queryParameters, baseWidgetState,
+        baseInnerWidgetState, isCancelable, isShowLoading, isSHowErrorToast);
   }
 
   //post请求
   PublishSubject<T> post<T>(String url,
       {Map<String, dynamic> queryParameters,
       BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState}) {
-    _requstHttp<T>(
-        url, false, queryParameters, baseWidgetState, baseInnerWidgetState);
+      BaseInnerWidgetState baseInnerWidgetState,
+      bool isCancelable = true,
+      bool isShowLoading = true,
+      bool isSHowErrorToast = true}) {
+    return _requstHttp<T>(url, false, queryParameters, baseWidgetState,
+        baseInnerWidgetState, isCancelable, isShowLoading, isSHowErrorToast);
   }
 
-  PublishSubject<T> _requstHttp<T>(
-    String url, [
-    bool isGet = false,
-    Map<String, dynamic> queryParameters,
-    BaseWidgetState baseWidgetState,
-    BaseInnerWidgetState baseInnerWidgetState,
-  ]) {
+  /// 参数说明  url 请求路径
+  /// queryParamerers  是 请求参数
+  /// baseWidget和baseInnerWidgetState用于 加载loading 和 设置 取消CanselToken
+  /// isCancelable 是设置改请求是否 能被取消 ， 必须建立在 传入baseWidget或者baseInnerWidgetState的基础之上
+  /// isShowLoading 设置是否能显示 加载loading , 同样要建立在传入 baseWidget或者 baseInnerWidgetState 基础之上
+  /// isShowErrorToaet  这个是 设置请求失败后 是否要 吐司的
+  PublishSubject<T> _requstHttp<T>(String url,
+      [bool isGet,
+      Map<String, dynamic> queryParameters,
+      BaseWidgetState baseWidgetState,
+      BaseInnerWidgetState baseInnerWidgetState,
+      bool isCancelable,
+      bool isShowLoading,
+      bool isSHowErrorToast]) {
     Future future;
     PublishSubject<T> publishSubject = PublishSubject<T>();
     CancelToken cancelToken;
-
-    if (baseWidgetState != null) {
-      baseWidgetState.setLoadingWidgetVisible(true);
-
-      //为了 能够取消 请求
-      cancelToken = _cancelTokens[baseWidgetState.getClassName()] == null
-          ? CancelToken()
-          : _cancelTokens[baseWidgetState.getClassName()];
-      _cancelTokens[baseWidgetState.getClassName()] = cancelToken;
-    }
-    if (baseInnerWidgetState != null) {
-      baseInnerWidgetState.setLoadingWidgetVisible(true);
-
-      //为了能够取消请求
-      cancelToken = _cancelTokens[baseInnerWidgetState.getClassName()] == null
-          ? CancelToken()
-          : _cancelTokens[baseInnerWidgetState.getClassName()];
-      _cancelTokens[baseInnerWidgetState.getClassName()] = cancelToken;
-    }
+    _setLoadingOrcancelAble(baseWidgetState, baseInnerWidgetState, isCancelable,
+        isShowLoading, cancelToken);
 
     if (isGet) {
       future = _dio.get(url,
@@ -96,44 +90,50 @@ class HttpManager {
 
       print("---responseData----${data}-----");
       if (isError) {
-        callError(publishSubject, MyError(10, "请求失败~"));
-        if (baseWidgetState != null) {
-          baseWidgetState.setLoadingWidgetVisible(false);
-        }
-        if (baseInnerWidgetState != null) {
-          baseInnerWidgetState.setLoadingWidgetVisible(false);
-        }
+        callError(publishSubject, MyError(10, "请求失败~"), baseWidgetState,
+            baseInnerWidgetState, isShowLoading, isSHowErrorToast);
       } else {
         //这里的解析 请参照 https://www.jianshu.com/p/e909f3f936d6 , dart的字符串 解析蛋碎一地
         publishSubject
             .add(EntityFactory.generateOBJ<T>(json.decode(data.toString())));
         publishSubject.close();
+
+        cancelLoading(baseWidgetState, baseInnerWidgetState, isShowLoading);
       }
     }).catchError((err) {
-      callError(publishSubject, MyError(1, err.toString()));
-      if (baseWidgetState != null) {
-        baseWidgetState.setLoadingWidgetVisible(false);
-      }
-      if (baseInnerWidgetState != null) {
-        baseInnerWidgetState.setLoadingWidgetVisible(false);
-      }
+      callError(publishSubject, MyError(1, err.toString()), baseWidgetState,
+          baseInnerWidgetState, isShowLoading, isSHowErrorToast);
     });
 
     return publishSubject;
   }
 
-  void callError(PublishSubject publishSubject, MyError error) {
+  ///请求错误以后 做的一些事情
+  void callError(
+      PublishSubject publishSubject,
+      MyError error,
+      BaseWidgetState baseWidgetState,
+      BaseInnerWidgetState baseInnerWidgetState,
+      bool isShowLoading,
+      bool isSHowErrorToast) {
     publishSubject.addError(error);
     publishSubject.close();
+
+    if (isSHowErrorToast) {
+      showErrorToast(error.message);
+    }
+
+    cancelLoading(baseWidgetState, baseInnerWidgetState, isShowLoading);
   }
 
   ///取消请求
   static void cancelHttp(String tag) {
-    ListCancelTokens();
     if (_cancelTokens.containsKey(tag)) {
-      _cancelTokens[tag].cancel();
+      if (!_cancelTokens[tag].isCancelled) {
+        _cancelTokens[tag].cancel();
+      }
+      _cancelTokens.remove(tag);
     }
-    ListCancelTokens();
   }
 
   ///配置dio
@@ -173,11 +173,64 @@ class HttpManager {
     _dio.interceptors.add(new MyIntercept());
   }
 
+  ///测试是否真的 可以清除 的方法
   static void ListCancelTokens() {
     _cancelTokens.forEach((key, value) {
-      print(key);
-      print(value);
+      print("${key}-----cancel---");
     });
+  }
+
+  //配置是否 显示 loading 和 是否能被取消
+  void _setLoadingOrcancelAble(
+      BaseWidgetState baseWidgetState,
+      BaseInnerWidgetState baseInnerWidgetState,
+      bool isCancelable,
+      bool isShowLoading,
+      CancelToken cancelToken) {
+    if (baseWidgetState != null) {
+      if (isShowLoading) {
+        baseWidgetState.setLoadingWidgetVisible(true);
+      }
+      //为了 能够取消 请求
+      if (isCancelable) {
+        cancelToken = _cancelTokens[baseWidgetState.getClassName()] == null
+            ? CancelToken()
+            : _cancelTokens[baseWidgetState.getClassName()];
+        _cancelTokens[baseWidgetState.getClassName()] = cancelToken;
+      }
+    }
+
+    //这里主要是做 是否 加载loading和是否 页面销毁的时候
+    if (baseInnerWidgetState != null) {
+      if (isShowLoading) {
+        baseInnerWidgetState.setLoadingWidgetVisible(true);
+      }
+      //为了能够取消请求
+      if (isCancelable) {
+        cancelToken = _cancelTokens[baseInnerWidgetState.getClassName()] == null
+            ? CancelToken()
+            : _cancelTokens[baseInnerWidgetState.getClassName()];
+        _cancelTokens[baseInnerWidgetState.getClassName()] = cancelToken;
+      }
+    }
+  }
+
+  void showErrorToast(String message) {
+    //TODO 统一错误提示
+  }
+
+  void cancelLoading(BaseWidgetState baseWidgetState,
+      BaseInnerWidgetState baseInnerWidgetState, bool isShowLoading) {
+    if (baseWidgetState != null) {
+      if (isShowLoading) {
+        baseWidgetState.setLoadingWidgetVisible(false);
+      }
+    }
+    if (baseInnerWidgetState != null) {
+      if (isShowLoading) {
+        baseInnerWidgetState.setLoadingWidgetVisible(false);
+      }
+    }
   }
 }
 
