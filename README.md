@@ -4,7 +4,6 @@ BaseWidget使用效果图
 
 <img  src="https://img-blog.csdnimg.cn/20190309103700606.gif" />
 
-
 # 博客介绍
  
 CSDN:[https://blog.csdn.net/iamdingruihaha/article/details/88319883](https://blog.csdn.net/iamdingruihaha/article/details/88319883)
@@ -44,8 +43,17 @@ CSDN:[https://blog.csdn.net/iamdingruihaha/article/details/88319883](https://blo
 | setEmptyImage|String path|设置空布局的占位图|
 | setLoadingWidgetVisible|bool isVisible |设置loading布局是否显示|
 
-
 <b>当然如果觉得这些内置布局不是很符合需求，都可以重写对应的方法，让子类自己完善方法。</br>
+
+### --------------2019年3月28更新网络请求封装--------------
+网络请求封装结合BaseWidget使用，实现了
+1. 自动加载loading，统一的请求错误处理，也可以单独处理请求结果
+2. 页面销毁，网络请求可以自动取消，也可以不取消
+3. 请求结果转化为实体类，方便使用
+4. 调用很简单，在第三个tab页和二级页面中给出了模拟请求 ， 朋友可自行观看
+5. 网络请求 封装步骤 可以查看HttpManger类，原理很简单，只是一些简单的封装调用，不过把rxDart揉进去了
+6. 由于语法不是很熟，可能达不到 Android 网络请求rxJava 那种爽歪歪，但是调用确实很简洁。有建议的朋友欢迎提出~
+
 
 ## Tips
   实现思路和方法很简单，作为入门级的封装还是可以的，献丑了！
