@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_base_widget/network/api.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 ///通常是和 viewpager 联合使用  ， 类似于Android 中的 fragment
 /// 不过生命周期 还需要在容器父类中根据tab切换来完善
@@ -578,6 +579,23 @@ abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
       } else if (index == widget.index) {
         onResume();
       }
+    }
+  }
+
+  void showToast(String content,
+      {Toast length = Toast.LENGTH_SHORT,
+      ToastGravity gravity = ToastGravity.BOTTOM,
+      Color backColor = Colors.black54,
+      Color textColor = Colors.white}) {
+    if (content != null) {
+      Fluttertoast.showToast(
+          msg: content,
+          toastLength: length,
+          gravity: gravity,
+          timeInSecForIos: 1,
+          backgroundColor: backColor,
+          textColor: textColor,
+          fontSize: 13.0);
     }
   }
 }

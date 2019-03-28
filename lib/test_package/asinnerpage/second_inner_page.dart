@@ -21,7 +21,23 @@ class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
   @override
   Widget buildWidget(BuildContext context) {
     // TODO: implement buildWidget
-    return Text("我是内部页面，index是1");
+    return Column(
+      children: <Widget>[
+        Text("我是内部页面，index是1"),
+        RaisedButton(
+          child: Text("点击弹出吐司"),
+          onPressed: () {
+            showToast("来自闯过五千年的伤~");
+          },
+        ),
+        RaisedButton(
+          child: Text("点击弹出对话框"),
+          onPressed: () {
+            showToast("这世界虽然很不美好~");
+          },
+        ),
+      ],
+    );
   }
 
   @override

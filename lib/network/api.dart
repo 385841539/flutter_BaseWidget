@@ -10,6 +10,7 @@ import 'package:flutter_base_widget/entity_factory.dart';
 import 'package:flutter_base_widget/network/myIntercept.dart';
 import 'package:flutter_base_widget/network/response.dart';
 import 'package:flutter_base_widget/network/response_callback.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:rxdart/rxdart.dart';
 
 ///http请求
@@ -217,6 +218,24 @@ class HttpManager {
 
   void showErrorToast(String message) {
     //TODO 统一错误提示
+    showToast(message);
+  }
+
+  void showToast(String content,
+      {Toast length = Toast.LENGTH_SHORT,
+      ToastGravity gravity = ToastGravity.BOTTOM,
+      Color backColor = Colors.black54,
+      Color textColor = Colors.white}) {
+    if (content != null) {
+      Fluttertoast.showToast(
+          msg: content,
+          toastLength: length,
+          gravity: gravity,
+          timeInSecForIos: 1,
+          backgroundColor: backColor,
+          textColor: textColor,
+          fontSize: 13.0);
+    }
   }
 
   void cancelLoading(BaseWidgetState baseWidgetState,

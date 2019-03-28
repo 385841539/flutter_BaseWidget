@@ -24,6 +24,7 @@ dependencies:
 
   rxdart: ^0.18.1
   rx_command: 2.0.5
+  fluttertoast: ^2.2.11
 
   device_info : ^0.2.0
 
