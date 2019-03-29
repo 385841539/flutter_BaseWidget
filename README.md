@@ -1,10 +1,11 @@
 # flutter_base_widget
 
 [App下载地址，点击下载](https://raw.githubusercontent.com/385841539/flutter_BaseWidget/master/apk/base_widget.apk)
-或者扫描下方二维码安装：
+或者扫描下方二维码安装：<br/>
 <img src="https://img-blog.csdnimg.cn/20190329151153581.jpg"/>
 
-BaseWidget使用效果图
+BaseWidget使用效果图<br/>
+
 <img  src="https://img-blog.csdnimg.cn/20190309103700606.gif" />
 
 # 博客介绍
