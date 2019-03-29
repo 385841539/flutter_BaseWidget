@@ -26,13 +26,13 @@ class _MyFirstInnerState extends BaseInnerWidgetState<FirstInnerPage> {
   }
 
   @override
-  void onResumed() {
+  void onResume() {
     // TODO: implement initData
     log("onResume");
   }
 
   @override
-  void onPaused() {
+  void onPause() {
     // TODO: implement onPause
     log("onPause");
   }

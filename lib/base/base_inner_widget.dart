@@ -32,7 +32,7 @@ abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
     setTopBarVisible(false);
     setAppBarVisible(false);
     onCreate();
-    onResumed();
+    onResume();
     super.initState();
   }
 
@@ -68,9 +68,9 @@ abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
   void changePageVisible(int index, int preIndex) {
     if (index != preIndex) {
       if (preIndex == widget.index) {
-        onPaused();
+        onPause();
       } else if (index == widget.index) {
-        onResumed();
+        onResume();
       }
     }
   }

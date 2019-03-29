@@ -132,7 +132,7 @@ abstract class BaseFuntion {
 
   ///点击错误页面后展示内容
   void onClickErrorWidget() {
-    onResumed(); //此处 默认onResume 就是 调用网络请求，
+    onResume(); //此处 默认onResume 就是 调用网络请求，
   }
 
   Widget getLoadingWidget() {
@@ -486,10 +486,10 @@ abstract class BaseFuntion {
   void onCreate();
 
   ///相当于onResume, 只要页面来到栈顶， 都会调用此方法，网络请求可以放在这个方法
-  void onResumed();
+  void onResume();
 
   ///页面被覆盖,暂停
-  void onPaused();
+  void onPause();
 
   ///返回UI控件 相当于setContentView()
   Widget buildWidget(BuildContext context);

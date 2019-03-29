@@ -29,8 +29,8 @@ abstract class BaseWidgetState<T extends BaseWidget> extends State<T>
 
   @override
   void initState() {
-    NavigatorManger().addWidget(this);
     initBaseCommon(this, context);
+    NavigatorManger().addWidget(this);
     WidgetsBinding.instance.addObserver(this);
     onCreate();
     super.initState();
@@ -46,15 +46,15 @@ abstract class BaseWidgetState<T extends BaseWidget> extends State<T>
     //说明是被覆盖了
     if (NavigatorManger().isSecondTop(this)) {
       if (!_onPause) {
-        onPaused();
+        onPause();
         _onPause = true;
       } else {
-        onResumed();
+        onResume();
         _onPause = false;
       }
     } else if (NavigatorManger().isTopPage(this)) {
       if (!_onPause) {
-        onPaused();
+        onPause();
       }
     }
     super.deactivate();
@@ -67,7 +67,7 @@ abstract class BaseWidgetState<T extends BaseWidget> extends State<T>
       //说明是 初次加载
       if (NavigatorManger().isTopPage(this)) {
         _onResumed = true;
-        onResumed();
+        onResume();
       }
     }
     return Scaffold(
@@ -98,13 +98,13 @@ abstract class BaseWidgetState<T extends BaseWidget> extends State<T>
       //on resume
       if (NavigatorManger().isTopPage(this)) {
         onForeground();
-        onResumed();
+        onResume();
       }
     } else if (state == AppLifecycleState.paused) {
       //onpause
       if (NavigatorManger().isTopPage(this)) {
         onBackground();
-        onPaused();
+        onPause();
       }
     }
     super.didChangeAppLifecycleState(state);
