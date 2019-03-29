@@ -82,18 +82,18 @@ class _TabBarBottomPageWidgetState extends BaseWidgetState<TabBarWidget> {
   }
 
   @override
-  void onPause() {
+  void onPaused() {
     log("onPause");
     if (_tabs[_preIndex].baseInnerWidgetState != null) {
-      _tabs[_preIndex].baseInnerWidgetState.onPause();
+      _tabs[_preIndex].baseInnerWidgetState.onPaused();
     }
   }
 
   @override
-  void onResume() {
+  void onResumed() {
     log("onResume");
     if (_tabs[_preIndex].baseInnerWidgetState != null) {
-      _tabs[_preIndex].baseInnerWidgetState.onResume();
+      _tabs[_preIndex].baseInnerWidgetState.onResumed();
     }
   }
 

@@ -34,13 +34,13 @@ class _ThirdPageState extends BaseWidgetState<ThirdPage> {
   }
 
   @override
-  void onPause() {
+  void onPaused() {
     // TODO: implement onPause
     log("onPause");
   }
 
   @override
-  void onResume() {
+  void onResumed() {
     // TODO: implement onResume
     log("onResume");
   }

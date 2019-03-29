@@ -42,13 +42,13 @@ class _SecondPageState extends BaseWidgetState<SecondPage> {
   }
 
   @override
-  void onPause() {
+  void onPaused() {
     // TODO: implement onPause
     log("onPause");
   }
 
   @override
-  void onResume() {
+  void onResumed() {
     // TODO: implement onResume
     log("onResume");
   }

@@ -48,13 +48,13 @@ class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
   }
 
   @override
-  void onResume() {
+  void onResumed() {
     // TODO: implement initData
     log("onResume");
   }
 
   @override
-  void onPause() {
+  void onPaused() {
     // TODO: implement onPause
     log("onPause");
   }

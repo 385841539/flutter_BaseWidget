@@ -33,13 +33,13 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
   }
 
   @override
-  void onResume() {
+  void onResumed() {
     // TODO: implement initData
     log("onResume");
   }
 
   @override
-  void onPause() {
+  void onPaused() {
     // TODO: implement onPause
     log("onPause");
   }

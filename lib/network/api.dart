@@ -21,7 +21,8 @@ class HttpManager {
   static Dio _dio;
   static final int CONNECR_TIME_OUT = 5000;
   static final int RECIVE_TIME_OUT = 3000;
-  static Map<String, CancelToken> _cancelTokens;
+  static Map<String, CancelToken> _cancelTokens =
+      new Map<String, CancelToken>();
 
   HttpManager._internal() {
     initDio();
@@ -147,7 +148,6 @@ class HttpManager {
     _dio.options.connectTimeout = CONNECR_TIME_OUT; //5s
     _dio.options.receiveTimeout = RECIVE_TIME_OUT;
     _dio.options.contentType = ContentType.parse(CONTENT_TYPE_FORM);
-    _cancelTokens = new Map<String, CancelToken>();
 
 //代理设置
     if (BuildConfig.isDebug) {
