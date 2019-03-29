@@ -1,6 +1,10 @@
 # flutter_base_widget
 
-BaseWidget使用效果图
+[App下载地址，点击下载](https://raw.githubusercontent.com/385841539/flutter_BaseWidget/master/apk/base_widget.apk)
+或者扫描下方二维码安装：<br/>
+<img src="https://img-blog.csdnimg.cn/20190329151153581.jpg"/>
+
+BaseWidget使用效果图<br/>
 
 <img  src="https://img-blog.csdnimg.cn/20190309103700606.gif" />
 
@@ -42,6 +46,8 @@ CSDN:[https://blog.csdn.net/iamdingruihaha/article/details/88319883](https://blo
 | setEmptyWidgetVisible|bool isVisible |设置空布局是否显示|
 | setEmptyImage|String path|设置空布局的占位图|
 | setLoadingWidgetVisible|bool isVisible |设置loading布局是否显示|
+|showToast|String content|弹出吐司，参数还有可选的字体颜色，大小等|
+|showToastDialog|String conetne|弹出对话框|
 
 <b>当然如果觉得这些内置布局不是很符合需求，都可以重写对应的方法，让子类自己完善方法。</br>
 
