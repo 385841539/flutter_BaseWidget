@@ -6,6 +6,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/_base_widget.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
+import 'package:flutter_base_widget/base/buildConfig.dart';
 import 'package:flutter_base_widget/entity_factory.dart';
 import 'package:flutter_base_widget/network/myIntercept.dart';
 import 'package:flutter_base_widget/network/response.dart';
@@ -149,15 +150,22 @@ class HttpManager {
     _cancelTokens = new Map<String, CancelToken>();
 
 //代理设置
-//    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (client) {
-//      // config the http client
-//      client.findProxy = (uri) {
-//        //proxy all request to localhost:8888
-//        return "PROXY localhost:8888";
+    if (BuildConfig.isDebug) {
+      //此处可以增加配置项，留一个设置代理的用户给测试人员配置，然后动态读取
+
+      //TODO 代理配置可以设置
+
+//      (_dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+//          (client) {
+//        // config the http client
+//        client.findProxy = (uri) {
+//          //proxy all request to localhost:8888
+//          return "PROXY 10.5.39.111:8888";
+//        };
+//        // you can also create a new HttpClient to dio
+//        // return new HttpClient();
 //      };
-//      // you can also create a new HttpClient to dio
-//      // return new HttpClient();
-//    };
+    }
 
     //证书配置
 //    String PEM="XXXXX"; // certificate content

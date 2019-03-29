@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
+import 'package:flutter_base_widget/dialog/loading_dialog.dart';
 import 'package:flutter_base_widget/test_package/asinnerpage/third_inner_page.dart';
 
 class SecondInnerPage extends BaseInnerWidget {
@@ -33,7 +34,7 @@ class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
         RaisedButton(
           child: Text("点击弹出对话框"),
           onPressed: () {
-            showToast("这世界虽然很不美好~");
+            showToastDialog("这是一个很寂寞的夜 ，下着 有些伤心的雨 ~ ");
           },
         ),
       ],
