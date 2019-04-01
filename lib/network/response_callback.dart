@@ -1,6 +1,4 @@
-import 'package:flutter_base_widget/network/response.dart';
-
-typedef void Success<T extends BaseResponse>(T data);
+typedef void Success<T>(T data);
 typedef void Failed(int code, String errorMsg);
 
 //abstract class IpAction {

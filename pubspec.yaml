@@ -26,6 +26,9 @@ dependencies:
   rx_command: 2.0.5
   fluttertoast: ^2.2.11
 
+
+  fluro: ^1.3.4
+
   device_info : ^0.2.0
 
   shared_preferences: ^0.5.1

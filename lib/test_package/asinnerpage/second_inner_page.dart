@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
 import 'package:flutter_base_widget/dialog/message_dialog.dart';
 import 'package:flutter_base_widget/test_package/asinnerpage/third_inner_page.dart';
-import 'package:flutter_base_widget/utils/constant.dart';
-import 'package:flutter_base_widget/utils/sp_utils.dart';
+import 'package:flutter_base_widget/utils/sp_utils/sp_constant.dart';
+import 'package:flutter_base_widget/utils/sp_utils/sp_utils.dart';
 
 class SecondInnerPage extends BaseInnerWidget {
   @override

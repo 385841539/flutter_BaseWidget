@@ -7,10 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/_base_widget.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
 import 'package:flutter_base_widget/base/buildConfig.dart';
-import 'package:flutter_base_widget/entity_factory.dart';
+import 'package:flutter_base_widget/utils/entity_factory.dart';
 import 'package:flutter_base_widget/network/myIntercept.dart';
-import 'package:flutter_base_widget/network/response.dart';
-import 'package:flutter_base_widget/network/response_callback.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:rxdart/rxdart.dart';
 

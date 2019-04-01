@@ -25,8 +25,17 @@ class SpUtils {
       return setBool(key, value);
     } else if (value is double) {
       return setDouble(key, value);
+    } else if (value is List<String>) {
+      return setList(key, value);
     }
-    throw Exception("存入的不是基本数据类型~~~");
+    throw Exception("存入的不是能存入的数据类型~~~");
+  }
+
+  Future<bool> setList(String key, List<String> value) async {
+    if (_sp != null) {
+      return _sp.setStringList(key, value);
+    }
+    return false;
   }
 
   Future<bool> setInt(String key, int value) async {
@@ -83,5 +92,12 @@ class SpUtils {
       return _sp.getInt(key);
     }
     return 0;
+  }
+
+  List<String> getList(String key) {
+    if (_sp != null) {
+      return _sp.getStringList(key);
+    }
+    return List<String>();
   }
 }
