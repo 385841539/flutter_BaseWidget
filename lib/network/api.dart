@@ -78,8 +78,7 @@ class HttpManager {
       future = _dio.get(url,
           queryParameters: queryParameters, cancelToken: cancelToken);
     } else {
-      future = _dio.post(url,
-          queryParameters: queryParameters, cancelToken: cancelToken);
+      future = _dio.post(url, data: queryParameters, cancelToken: cancelToken);
     }
 
     future.then((data) {
