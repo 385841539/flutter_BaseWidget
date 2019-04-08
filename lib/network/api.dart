@@ -50,8 +50,15 @@ class HttpManager {
       bool isCancelable = true,
       bool isShowLoading = true,
       bool isSHowErrorToast = true}) {
-    return _requstHttp<T>(url, false, queryParameters, baseWidgetState,
-        baseInnerWidgetState, isCancelable, isShowLoading, isSHowErrorToast);
+    return _requstHttp<T>(
+        url,
+        false,
+        FormData.from(queryParameters),
+        baseWidgetState,
+        baseInnerWidgetState,
+        isCancelable,
+        isShowLoading,
+        isSHowErrorToast);
   }
 
   /// 参数说明  url 请求路径
@@ -62,7 +69,7 @@ class HttpManager {
   /// isShowErrorToaet  这个是 设置请求失败后 是否要 吐司的
   PublishSubject<T> _requstHttp<T>(String url,
       [bool isGet,
-      Map<String, dynamic> queryParameters,
+      queryParameters,
       BaseWidgetState baseWidgetState,
       BaseInnerWidgetState baseInnerWidgetState,
       bool isCancelable,
