@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
 import 'package:flutter_base_widget/network/bean/login_response_entity.dart';
+import 'package:flutter_base_widget/network/intercept/noaction_intercept.dart';
+import 'package:flutter_base_widget/network/intercept/showloading_intercept.dart';
 import 'package:flutter_base_widget/network/requestUtil.dart';
 import 'package:rxdart/rxdart.dart';
 
@@ -85,7 +87,7 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
   }
 
   void requestLogin() {
-    RequestMap.requestLogin(this, null).listen((da) {
+    RequestMap.requestLogin(ShowLoadingIntercept(this)).listen((da) {
       List<LoginResponseResult> lists = da.results;
       String stringBuffer = "请求结果:\n"; //不推荐用+拼接字符串，这里只是展示
       for (int i = 0; i < lists.length; i++) {
@@ -99,7 +101,8 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
   }
 
   void requestErrorRequest() {
-    RequestMap.testErrorrequest(this).listen((data) {}, onError: (err) {
+    RequestMap.testErrorrequest(ShowLoadingIntercept(this)).listen((data) {},
+        onError: (err) {
       print(err.message);
       setErrorWidgetVisible(true);
     });

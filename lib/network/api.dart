@@ -4,9 +4,8 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_base_widget/base/_base_widget.dart';
-import 'package:flutter_base_widget/base/base_inner_widget.dart';
 import 'package:flutter_base_widget/base/buildConfig.dart';
+import 'package:flutter_base_widget/network/intercept/base_intercept.dart';
 import 'package:flutter_base_widget/utils/entity_factory.dart';
 import 'package:flutter_base_widget/network/myIntercept.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -31,34 +30,24 @@ class HttpManager {
   }
 
   //get请求
-  PublishSubject<T> get<T>(String url,
-      {Map<String, dynamic> queryParameters,
-      BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState,
-      bool isCancelable = true,
-      bool isShowLoading = true,
-      bool isSHowErrorToast = true}) {
-    return _requstHttp<T>(url, true, queryParameters, baseWidgetState,
-        baseInnerWidgetState, isCancelable, isShowLoading, isSHowErrorToast);
+  PublishSubject<T> get<T>(
+    String url, {
+    Map<String, dynamic> queryParameters,
+    BaseIntercept baseIntercept,
+    bool isCancelable = true,
+  }) {
+    return _requstHttp<T>(
+        url, true, queryParameters, baseIntercept, isCancelable);
   }
 
   //post请求
   PublishSubject<T> post<T>(String url,
       {Map<String, dynamic> queryParameters,
-      BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState,
+      BaseIntercept baseIntercept,
       bool isCancelable = true,
-      bool isShowLoading = true,
       bool isSHowErrorToast = true}) {
-    return _requstHttp<T>(
-        url,
-        false,
-        FormData.from(queryParameters),
-        baseWidgetState,
-        baseInnerWidgetState,
-        isCancelable,
-        isShowLoading,
-        isSHowErrorToast);
+    return _requstHttp<T>(url, false, FormData.from(queryParameters),
+        baseIntercept, isCancelable);
   }
 
   /// 参数说明  url 请求路径
@@ -70,16 +59,12 @@ class HttpManager {
   PublishSubject<T> _requstHttp<T>(String url,
       [bool isGet,
       queryParameters,
-      BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState,
-      bool isCancelable,
-      bool isShowLoading,
-      bool isSHowErrorToast]) {
+      BaseIntercept baseIntercept,
+      bool isCancelable]) {
     Future future;
     PublishSubject<T> publishSubject = PublishSubject<T>();
     CancelToken cancelToken;
-    _setLoadingOrcancelAble(baseWidgetState, baseInnerWidgetState, isCancelable,
-        isShowLoading, cancelToken);
+    _setInterceptOrcancelAble(baseIntercept, isCancelable, cancelToken);
 
     if (isGet) {
       future = _dio.get(url,
@@ -97,40 +82,35 @@ class HttpManager {
 
       print("---responseData----${data}-----");
       if (isError) {
-        callError(publishSubject, MyError(10, "请求失败~"), baseWidgetState,
-            baseInnerWidgetState, isShowLoading, isSHowErrorToast);
+        callError(
+          publishSubject,
+          MyError(10, "请求失败~"),
+          baseIntercept,
+        );
       } else {
         //这里的解析 请参照 https://www.jianshu.com/p/e909f3f936d6 , dart的字符串 解析蛋碎一地
         publishSubject
             .add(EntityFactory.generateOBJ<T>(json.decode(data.toString())));
         publishSubject.close();
 
-        cancelLoading(baseWidgetState, baseInnerWidgetState, isShowLoading);
+        cancelLoading(baseIntercept);
       }
     }).catchError((err) {
-      callError(publishSubject, MyError(1, err.toString()), baseWidgetState,
-          baseInnerWidgetState, isShowLoading, isSHowErrorToast);
+      callError(publishSubject, MyError(1, err.toString()), baseIntercept);
     });
 
     return publishSubject;
   }
 
   ///请求错误以后 做的一些事情
-  void callError(
-      PublishSubject publishSubject,
-      MyError error,
-      BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState,
-      bool isShowLoading,
-      bool isSHowErrorToast) {
+  void callError(PublishSubject publishSubject, MyError error,
+      BaseIntercept baseIntercept) {
     publishSubject.addError(error);
     publishSubject.close();
-
-    if (isSHowErrorToast) {
-      showErrorToast(error.message);
+    cancelLoading(baseIntercept);
+    if (baseIntercept != null) {
+      baseIntercept.requestFailure(error.message);
     }
-
-    cancelLoading(baseWidgetState, baseInnerWidgetState, isShowLoading);
   }
 
   ///取消请求
@@ -194,36 +174,16 @@ class HttpManager {
   }
 
   //配置是否 显示 loading 和 是否能被取消
-  void _setLoadingOrcancelAble(
-      BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState,
-      bool isCancelable,
-      bool isShowLoading,
-      CancelToken cancelToken) {
-    if (baseWidgetState != null) {
-      if (isShowLoading) {
-        baseWidgetState.setLoadingWidgetVisible(true);
-      }
+  void _setInterceptOrcancelAble(
+      BaseIntercept baseIntercept, bool isCancelable, CancelToken cancelToken) {
+    if (baseIntercept != null) {
+      baseIntercept.beforeRequest();
       //为了 能够取消 请求
       if (isCancelable) {
-        cancelToken = _cancelTokens[baseWidgetState.getClassName()] == null
+        cancelToken = _cancelTokens[baseIntercept.getClassName()] == null
             ? CancelToken()
-            : _cancelTokens[baseWidgetState.getClassName()];
-        _cancelTokens[baseWidgetState.getClassName()] = cancelToken;
-      }
-    }
-
-    //这里主要是做 是否 加载loading和是否 页面销毁的时候
-    if (baseInnerWidgetState != null) {
-      if (isShowLoading) {
-        baseInnerWidgetState.setLoadingWidgetVisible(true);
-      }
-      //为了能够取消请求
-      if (isCancelable) {
-        cancelToken = _cancelTokens[baseInnerWidgetState.getClassName()] == null
-            ? CancelToken()
-            : _cancelTokens[baseInnerWidgetState.getClassName()];
-        _cancelTokens[baseInnerWidgetState.getClassName()] = cancelToken;
+            : _cancelTokens[baseIntercept.getClassName()];
+        _cancelTokens[baseIntercept.getClassName()] = cancelToken;
       }
     }
   }
@@ -250,17 +210,9 @@ class HttpManager {
     }
   }
 
-  void cancelLoading(BaseWidgetState baseWidgetState,
-      BaseInnerWidgetState baseInnerWidgetState, bool isShowLoading) {
-    if (baseWidgetState != null) {
-      if (isShowLoading) {
-        baseWidgetState.setLoadingWidgetVisible(false);
-      }
-    }
-    if (baseInnerWidgetState != null) {
-      if (isShowLoading) {
-        baseInnerWidgetState.setLoadingWidgetVisible(false);
-      }
+  void cancelLoading(BaseIntercept baseIntercept) {
+    if (baseIntercept != null) {
+      baseIntercept.afterRequest();
     }
   }
 }

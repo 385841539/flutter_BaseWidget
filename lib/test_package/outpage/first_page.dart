@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_base_widget/base/_base_widget.dart';
 import 'package:flutter_base_widget/network/bean/login_response_entity.dart';
+import 'package:flutter_base_widget/network/intercept/showloading_intercept.dart';
 import 'package:flutter_base_widget/network/requestUtil.dart';
 import 'package:flutter_base_widget/test_package/outpage/second_page.dart';
 
@@ -121,7 +122,7 @@ class _FirstPageState extends BaseWidgetState<FirstPage> {
   }
 
   void requestLogin(int i) {
-    RequestMap.requestLogin(null, this).listen((da) {
+    RequestMap.requestLogin(ShowLoadingIntercept(this)).listen((da) {
       List<LoginResponseResult> lists = da.results;
       for (int i = 0; i < lists.length; i++) {
         log(lists[i].icon);
