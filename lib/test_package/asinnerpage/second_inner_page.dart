@@ -56,7 +56,9 @@ class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
         RaisedButton(
           child: Text("点击弹出对话框"),
           onPressed: () {
-            showToastDialog("这是一个很寂寞的夜 ，下着 有些伤心的雨 ~ ");
+            showToastDialog("这是一个很寂寞的夜 ，下着 有些伤心的雨 ~ ", callBack: () {
+              showToast("食6啦。。。");
+            });
           },
         ),
       ],

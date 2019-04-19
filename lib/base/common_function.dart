@@ -514,11 +514,8 @@ abstract class BaseFuntion {
   }
 
   ///弹对话框
-  void showToastDialog(
-    String message, {
-    String title = "提示",
-    String negativeText = "确定",
-  }) {
+  void showToastDialog(String message,
+      {String title = "提示", String negativeText = "确定", Function callBack}) {
     if (_contextBaseFunction != null) {
       if (message != null && message.isNotEmpty) {
         showDialog<Null>(
@@ -531,6 +528,9 @@ abstract class BaseFuntion {
                 message: message,
                 onCloseEvent: () {
                   Navigator.pop(context);
+                  if (callBack != null) {
+                    callBack();
+                  }
                 },
               );
               //调用对话框);
