@@ -540,16 +540,25 @@ abstract class BaseFuntion {
   }
 
   String getClassName() {
-    if (_contextBaseFunction == null) {
-      return null;
+      if (_contextBaseFunction == null) {
+        return "";
+      }
+      String className = _contextBaseFunction.toString();
+      if (className == null) {
+        return "";
+      }
+
+      if (BuildConfig.isDebug) {
+        try {
+          className = className.substring(0, className.indexOf("("));
+        } catch (err) {
+          className = "";
+        }
+        return className;
+      }
+
+      return className;
     }
-    String className = _contextBaseFunction.toString();
-    if (className == null) {
-      return null;
-    }
-    className = className.substring(0, className.indexOf("("));
-    return className;
-  }
 
   ///弹吐司
   void showToast(String content,
