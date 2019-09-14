@@ -38,7 +38,7 @@ class _BingTuPageState extends BaseWidgetState<PieChartPage> {
   @override
   void onCreate() {
     // TODO: implement onCreate
-    setAppBarRightTitle("")
+    setAppBarRightTitle("");
   }
 
   @override
