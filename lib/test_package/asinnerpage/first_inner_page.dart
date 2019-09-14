@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
 import 'package:flutter_base_widget/test_package/asinnerpage/second_inner_page.dart';
 import 'package:flutter_base_widget/test_package/outpage/first_page.dart';
+import 'package:flutter_base_widget/widget/piechart/PieChartPage.dart';
 
 class FirstInnerPage extends BaseInnerWidget {
   @override
@@ -46,12 +47,25 @@ class _MyFirstInnerState extends BaseInnerWidgetState<FirstInnerPage> {
   @override
   Widget buildWidget(BuildContext context) {
     // TODO: implement buildWidget
-    return RaisedButton(
-      onPressed: () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => FirstPage()));
-      },
-      child: Text("我是内部页面，index是0\n点击会跳到下一级页面"),
-    );
+    return   Column(children: <Widget>[
+
+      RaisedButton(
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => FirstPage()));
+        },
+        child: Text("我是内部页面，index是0\n点击会跳到下一级页面"),
+      ),
+
+      RaisedButton(
+        onPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => PieChartPage()));
+        },
+        child: Text("跳到自定义的饼状图"),
+      ),
+
+
+    ],);
   }
 }
