@@ -1,8 +1,8 @@
 # Flutter常见的一些架构、自定义实例
 ### 持续更新中，大家共同进步，有任何疑问，欢迎加QQ群： 661614986 ，共同探讨。
-<img   src="https://img-blog.csdnimg.cn/20190915104051374.jpeg" height="200" />
-
 --------------------------
+
+
 |功能名称|归类|链接|
 |------|-------|--------|
 |页面基类，类比于安卓里面的BaseActivity|架构级|[CSDN分析过程](https://blog.csdn.net/iamdingruihaha/article/details/88319883)<br>[github目录链接](https://github.com/385841539/flutter_BaseWidget/blob/master/readme/READMEForBasePage.md)|
