@@ -58,8 +58,8 @@ abstract class BaseFuntion {
   Widget getBaseView(BuildContext context) {
     return Column(
       children: <Widget>[
-        _getBaseTopBar(),
-        _getBaseAppBar(),
+        _isTopBarShow ? _getBaseTopBar() : _getHolderLWidget(),
+        _isAppBarShow?_getBaseAppBar():_getHolderLWidget(),
         Container(
           width: getScreenWidth(),
           height: getMainWidgetHeight(),
@@ -67,9 +67,9 @@ abstract class BaseFuntion {
           child: Stack(
             children: <Widget>[
               _buildProviderWidget(context),
-              _getBaseErrorWidget(),
-              _getBaseEmptyWidget(),
-              _getBassLoadingWidget(),
+              _isErrorWidgetShow?_getBaseErrorWidget():_getHolderLWidget(),
+              _isEmptyWidgetVisible?_getBaseEmptyWidget():_getHolderLWidget(),
+              _isLoadingWidgetShow?_getBassLoadingWidget():_getHolderLWidget(),
             ],
           ),
         ),
@@ -77,18 +77,19 @@ abstract class BaseFuntion {
     );
   }
 
-  Widget _getBaseTopBar() {
-    return Offstage(
-      offstage: !_isTopBarShow,
-      child: getTopBar(),
+  Widget _getHolderLWidget() {
+    return Container(
+      width: 0,
+      height: 0,
     );
   }
 
+  Widget _getBaseTopBar() {
+    return getTopBar();
+  }
+
   Widget _getBaseAppBar() {
-    return Offstage(
-      offstage: !_isAppBarShow,
-      child: getAppBar(),
-    );
+    return getAppBar();
   }
 
   ///设置状态栏，可以自行重写拓展成其他的任何形式
@@ -259,24 +260,15 @@ abstract class BaseFuntion {
   }
 
   Widget _getBaseErrorWidget() {
-    return Offstage(
-      offstage: !_isErrorWidgetShow,
-      child: getErrorWidget(),
-    );
+    return getErrorWidget();
   }
 
   Widget _getBassLoadingWidget() {
-    return Offstage(
-      offstage: !_isLoadingWidgetShow,
-      child: getLoadingWidget(),
-    );
+    return  getLoadingWidget();
   }
 
   Widget _getBaseEmptyWidget() {
-    return Offstage(
-      offstage: !_isEmptyWidgetVisible,
-      child: getEmptyWidget(),
-    );
+    return  getEmptyWidget();
   }
 
   Widget getEmptyWidget() {
@@ -604,13 +596,20 @@ abstract class BaseFuntion {
       ToastGravity gravity = ToastGravity.BOTTOM,
       Color backColor = Colors.black54,
       Color textColor = Colors.white}) {
-      ToastUtils.showToast(content,length: length,gravity: gravity,backColor: backColor,textColor: textColor);
+    ToastUtils.showToast(content,
+        length: length,
+        gravity: gravity,
+        backColor: backColor,
+        textColor: textColor);
   }
 
   ///返回 状态管理组件
   _buildProviderWidget(BuildContext context) {
-    return MultiProvider(providers: getProvider()==null?[]:getProvider(), child: buildWidget(context));
+    return MultiProvider(
+        providers: getProvider() == null ? [] : getProvider(),
+        child: buildWidget(context));
   }
+
   String getClassName() {
     if (_contextBaseFunction == null) {
       return null;
@@ -624,8 +623,7 @@ abstract class BaseFuntion {
   }
 
   //可以复写
-   List<SingleChildCloneableWidget> getProvider(){
-
+  List<SingleChildCloneableWidget> getProvider() {
     return null;
-   }
+  }
 }
