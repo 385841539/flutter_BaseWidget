@@ -2,9 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/base_inner_widget.dart';
 import 'package:flutter_base_widget/dialog/message_dialog.dart';
+import 'package:flutter_base_widget/route/routerUtils.dart';
 import 'package:flutter_base_widget/test_package/asinnerpage/third_inner_page.dart';
 import 'package:flutter_base_widget/utils/sp_utils/sp_constant.dart';
 import 'package:flutter_base_widget/utils/sp_utils/sp_utils.dart';
+import 'package:flutter_base_widget/utils/string_utils.dart';
 
 class SecondInnerPage extends BaseInnerWidget {
   @override
@@ -22,6 +24,8 @@ class SecondInnerPage extends BaseInnerWidget {
 
 class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
   String _name = "";
+
+  String _url="";
 
   @override
   Widget buildWidget(BuildContext context) {
@@ -59,6 +63,19 @@ class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
             showToastDialog("这是一个很寂寞的夜 ，下着 有些伤心的雨 ~ ", callBack: () {
               showToast("食6啦。。。");
             });
+          },
+        ),
+        TextField(
+    decoration: InputDecoration(hintText: "请输入跳转网址"),
+          onChanged: (content) {
+            _url = content;
+          },
+          autofocus: false,
+        ),
+        RaisedButton(
+          child: Text("跳转到web页面"),
+          onPressed: () {
+           Nav.nav(context, StringUtils.isEmpty(_url)?"https://www.baidu.com/":_url);
           },
         ),
       ],
