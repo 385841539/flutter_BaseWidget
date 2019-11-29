@@ -1,69 +1,81 @@
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_base_widget/base/buildConfig.dart';
-import 'package:flutter_base_widget/network/intercept/base_intercept.dart';
-import 'package:flutter_base_widget/utils/entity_factory.dart';
-import 'package:flutter_base_widget/network/myIntercept.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+import 'package:flutter_base_widget/network/response/ApiStringTransform.dart';
+import 'package:flutter_base_widget/network/response/Transform.dart';
+import 'package:flutter_base_widget/utils/sp_utils/sp_constant.dart';
+import 'package:flutter_base_widget/utils/sp_utils/sp_utils.dart';
 import 'package:rxdart/rxdart.dart';
+
+import 'intercept/base_intercept.dart';
 
 ///http请求
 class HttpManager {
-  static const CONTENT_TYPE_JSON = "application/json";
-  static const CONTENT_TYPE_FORM = "application/x-www-form-urlencoded";
+  static final int CONNECR_TIME_OUT = 1000 * 10;
+  static final int RECIVE_TIME_OUT = 1000 * 10;
+  static final CONTENT_TYPE_JSON = "application/json;charset=UTF-8";
+  static final CONTENT_TYPE_FORM = "application/x-www-form-urlencoded";
   static Dio _dio;
-  static final int CONNECR_TIME_OUT = 5000;
-  static final int RECIVE_TIME_OUT = 3000;
+
   static Map<String, CancelToken> _cancelTokens =
       new Map<String, CancelToken>();
 
   HttpManager._internal() {
     initDio();
   }
+
   static HttpManager _httpManger = HttpManager._internal();
+
   factory HttpManager() {
     return _httpManger;
   }
 
   //get请求
   PublishSubject<T> get<T>(
-    String url, {
+    String url,
+    ResponseTransform<T> transform, {
     Map<String, dynamic> queryParameters,
     BaseIntercept baseIntercept,
     bool isCancelable = true,
   }) {
     return _requstHttp<T>(
-        url, true, queryParameters, baseIntercept, isCancelable);
+        url, transform, true, queryParameters, baseIntercept, isCancelable);
   }
 
   //post请求
-  PublishSubject<T> post<T>(String url,
+  PublishSubject<T> post<T>(String url, ResponseTransform<T> transform,
       {Map<String, dynamic> queryParameters,
       BaseIntercept baseIntercept,
       bool isCancelable = true,
       bool isSHowErrorToast = true}) {
-    return _requstHttp<T>(url, false, FormData.from(queryParameters),
-        baseIntercept, isCancelable);
+    return _requstHttp<T>(
+        url, transform, false, queryParameters, baseIntercept, isCancelable);
   }
 
   /// 参数说明  url 请求路径
   /// queryParamerers  是 请求参数
-  /// baseWidget和baseInnerWidgetState用于 加载loading 和 设置 取消CanselToken
+  /// transform 请求结果处理的转换器
+  /// isGet get 还是 post 请求
+  /// baseIntercept用于 加载loading 和 设置 取消CanselToken
   /// isCancelable 是设置改请求是否 能被取消 ， 必须建立在 传入baseWidget或者baseInnerWidgetState的基础之上
-  /// isShowLoading 设置是否能显示 加载loading , 同样要建立在传入 baseWidget或者 baseInnerWidgetState 基础之上
-  /// isShowErrorToaet  这个是 设置请求失败后 是否要 吐司的
-  PublishSubject<T> _requstHttp<T>(String url,
+  PublishSubject<T> _requstHttp<T>(String url, ResponseTransform transform,
       [bool isGet,
       queryParameters,
       BaseIntercept baseIntercept,
       bool isCancelable]) {
     Future future;
+
     PublishSubject<T> publishSubject = PublishSubject<T>();
+    if (transform == null) {
+      transform = ApiStringTransform(); //内置一个 返回String 的Transform
+    }
+
+    transform.setBaseIntercept(baseIntercept);
+    transform.setPublishPubject(publishSubject);
     CancelToken cancelToken;
+
     _setInterceptOrcancelAble(baseIntercept, isCancelable, cancelToken);
 
     if (isGet) {
@@ -74,43 +86,12 @@ class HttpManager {
     }
 
     future.then((data) {
-      //这里要做错误处理
-      //需要先过滤 error ， 根据和后台的 约定 ， 搞清楚什么是失败
-      // 什么是成功  ， 这里只是根据了干货集中营的 返回 模拟了一下
-
-      bool isError = json.decode(data.toString())["error"];
-
-      print("---responseData----${data}-----");
-      if (isError) {
-        callError(
-          publishSubject,
-          MyError(10, "请求失败~"),
-          baseIntercept,
-        );
-      } else {
-        //这里的解析 请参照 https://www.jianshu.com/p/e909f3f936d6 , dart的字符串 解析蛋碎一地
-        publishSubject
-            .add(EntityFactory.generateOBJ<T>(json.decode(data.toString())));
-        publishSubject.close();
-
-        cancelLoading(baseIntercept);
-      }
+      transform.apply(data.toString());
     }).catchError((err) {
-      callError(publishSubject, MyError(1, err.toString()), baseIntercept);
+      _doError(err, transform);
     });
 
     return publishSubject;
-  }
-
-  ///请求错误以后 做的一些事情
-  void callError(PublishSubject publishSubject, MyError error,
-      BaseIntercept baseIntercept) {
-    publishSubject.addError(error);
-    publishSubject.close();
-    cancelLoading(baseIntercept);
-    if (baseIntercept != null) {
-      baseIntercept.requestFailure(error.message);
-    }
   }
 
   ///取消请求
@@ -126,6 +107,11 @@ class HttpManager {
   ///配置dio
   void initDio() {
     _dio = Dio();
+
+
+    /// 添加拦截器
+//    _dio.interceptors.add(new MyIntercept());
+
     // 配置dio实例
 //    _dio.options.baseUrl = "http://10.150.20.86/xloan-app-api/";
     _dio.options.baseUrl = "http://gank.io/api/";
@@ -135,38 +121,46 @@ class HttpManager {
 
 //代理设置
     if (BuildConfig.isDebug) {
+//      _dio.interceptors
+//          .add(WhLogInterceptor(requestBody: true, responseBody: true));
       //此处可以增加配置项，留一个设置代理的用户给测试人员配置，然后动态读取
 
-      //TODO 代理配置可以设置
+      String proxy=SpUtils.getString(SpConstanst.httpProxyHost);
 
-//      (_dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
-//          (client) {
-//        // config the http client
-//        client.findProxy = (uri) {
-//          //proxy all request to localhost:8888
-//          return "PROXY 10.5.39.111:8888";
-//        };
-//        // you can also create a new HttpClient to dio
-//        // return new HttpClient();
-//      };
+//      print("--prox----${proxy}----${SpUtils.getBool(SpConstanst.httpProxyEnable)}=====-");
+      if(proxy!=null&&proxy!=""&&SpUtils.getBool(SpConstanst.httpProxyEnable)) {
+        (_dio.httpClientAdapter as DefaultHttpClientAdapter)
+            .onHttpClientCreate =
+            (client) {
+          // config the http client
+          client.findProxy = (uri) {
+            //proxy all request to localhost:8888
+            return "PROXY " + SpUtils.getString(SpConstanst.httpProxyHost);
+          };
+
+
+          client.badCertificateCallback =
+              (X509Certificate cert, String host, int port) => true;
+          // you can also create a new HttpClient to dio
+          // return new HttpClient();
+        };
+      }
+    } else {
+      //证书配置 ， 忽略证书
+      String PEM = "XXXXX"; // certificate content
+      (_dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate =
+          (client) {
+        client.badCertificateCallback =
+            (X509Certificate cert, String host, int port) {
+          return true; //返回 true 表明 忽略 证书校验
+        };
+      };
     }
-
-    //证书配置
-//    String PEM="XXXXX"; // certificate content
-//    (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate  = (client) {
-//      client.badCertificateCallback=(X509Certificate cert, String host, int port){
-//        if(cert.pem==PEM){ // Verify the certificate
-//          return true;
-//        }
-//        return false;
-//      };
-//    };
-
-    /// 添加拦截器
-    _dio.interceptors.add(new MyIntercept());
   }
 
-  ///测试是否真的 可以清除 的方法
+
+
+  ///测试是否真的 可以清除 的方法,用途仅为验证
   static void ListCancelTokens() {
     _cancelTokens.forEach((key, value) {
       print("${key}-----cancel---");
@@ -188,37 +182,36 @@ class HttpManager {
     }
   }
 
-  void showErrorToast(String message) {
-    //TODO 统一错误提示
-    showToast(message);
-  }
-
-  void showToast(String content,
-      {Toast length = Toast.LENGTH_SHORT,
-      ToastGravity gravity = ToastGravity.BOTTOM,
-      Color backColor = Colors.black54,
-      Color textColor = Colors.white}) {
-    if (content != null) {
-      Fluttertoast.showToast(
-          msg: content,
-          toastLength: length,
-          gravity: gravity,
-          timeInSecForIos: 1,
-          backgroundColor: backColor,
-          textColor: textColor,
-          fontSize: 13.0);
+  ///过滤网络出错的情况
+  void _doError(err, ResponseTransform transform) {
+    try {
+      if (err is DioError) {
+        if (err.type == DioErrorType.CANCEL) {
+          print("---请求取消---");
+        } else if (err.type == DioErrorType.CONNECT_TIMEOUT ||
+            err.type == DioErrorType.RECEIVE_TIMEOUT) {
+          transform.callError(MyError(400, "连接超时"));
+        } else if (err.response != null) {
+          transform
+              .callError(MyError(err.response.statusCode, "${err.message}"));
+        } else {
+          transform.callError(MyError(400, "${err.message}"));
+        }
+      } else if (err is SocketException) {
+        transform.callError(MyError(400, "网路异常"));
+      } else {
+        transform.callError(MyError(1, err.toString()));
+      }
+    } catch (err2) {
+      transform.callError(MyError(400, "网络异常，请稍后重试"));
     }
   }
 
-  void cancelLoading(BaseIntercept baseIntercept) {
-    if (baseIntercept != null) {
-      baseIntercept.afterRequest();
-    }
-  }
 }
 
 class MyError {
   int code;
   String message;
+
   MyError(this.code, this.message);
 }

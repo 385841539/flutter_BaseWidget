@@ -38,13 +38,13 @@ class _MyInnerSecondState extends BaseInnerWidgetState<SecondInnerPage> {
         RaisedButton(
           child: Text("存数据"),
           onPressed: () {
-            SpUtils().put(SpConstanst.PHONE_NUMBER, _name);
+            SpUtils.put(SpConstanst.phoneNumber, _name);
           },
         ),
         RaisedButton(
           child: Text("读数据"),
           onPressed: () {
-            showToastDialog(SpUtils().getString(SpConstanst.PHONE_NUMBER));
+            showToastDialog(SpUtils.getString(SpConstanst.phoneNumber));
           },
         ),
         RaisedButton(

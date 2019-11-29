@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_base_widget/base/common_function.dart';
 import 'package:flutter_base_widget/network/api.dart';
+
+import 'common_function.dart';
+
 
 ///通常是和 viewpager 联合使用  ， 类似于Android 中的 fragment
 /// 不过生命周期 还需要在容器父类中根据tab切换来完善
@@ -19,20 +21,21 @@ abstract class BaseInnerWidget extends StatefulWidget {
   int setIndex();
   BaseInnerWidgetState getState();
   String getStateName() {
-    return baseInnerWidgetState.getClassName();
+    return baseInnerWidgetState.getWidgetName();
   }
 }
 
 abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
     with AutomaticKeepAliveClientMixin, BaseFuntion {
+  bool isFirstLoad=true;//是否是第一次加载的标记位
+
   @override
   void initState() {
-    initBaseCommon(this, context);
+    initBaseCommon(this);
     setBackIconHinde();
     setTopBarVisible(false);
     setAppBarVisible(false);
     onCreate();
-    onResume();
     super.initState();
   }
 
@@ -45,6 +48,12 @@ abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
   @override
   Widget build(BuildContext context) {
     super.build(context);
+
+    if(isFirstLoad){
+      onResume();
+      isFirstLoad=false;
+    }
+
     return Scaffold(
       body: getBaseView(context),
     );
@@ -52,9 +61,8 @@ abstract class BaseInnerWidgetState<T extends BaseInnerWidget> extends State<T>
 
   @override
   void dispose() {
-    // TODO: implement dispose
     onDestory();
-    HttpManager.cancelHttp(getClassName()); //取消网络请求
+    HttpManager.cancelHttp(getWidgetName()); //取消网络请求
     super.dispose();
   }
 

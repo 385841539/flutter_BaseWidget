@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_base_widget/base/buildConfig.dart';
 import 'package:flutter_base_widget/dialog/message_dialog.dart';
+import 'package:flutter_base_widget/utils/toast/toast.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:provider/provider.dart';
+
+import 'buildConfig.dart';
 
 /// base 类 常用的一些工具类 ， 放在这里就可以了
 abstract class BaseFuntion {
@@ -14,8 +17,8 @@ abstract class BaseFuntion {
 
   bool _isErrorWidgetShow = false; //错误信息是否显示
 
-  Color _topBarColor = Colors.red;
-  Color _appBarColor = Colors.red;
+  Color _topBarColor = Colors.blue;
+  Color _appBarColor = Colors.blue;
   Color _appBarContentColor = Colors.white;
 
   //标题字体大小
@@ -43,11 +46,11 @@ abstract class BaseFuntion {
 
   double bottomVsrtical = 0; //作为内部页面距离底部的高度
 
-  void initBaseCommon(State state, BuildContext context) {
+  void initBaseCommon(State state) {
     _stateBaseFunction = state;
-    _contextBaseFunction = context;
+    _contextBaseFunction = state.context;
+    _appBarTitle = getWidgetName();
     if (BuildConfig.isDebug) {
-      _appBarTitle = getClassName();
       _appBarRightTitle = "标题二";
     }
   }
@@ -63,7 +66,7 @@ abstract class BaseFuntion {
           color: Colors.white, //背景颜色，可自己变更
           child: Stack(
             children: <Widget>[
-              buildWidget(context),
+              _buildProviderWidget(context),
               _getBaseErrorWidget(),
               _getBaseEmptyWidget(),
               _getBassLoadingWidget(),
@@ -199,13 +202,18 @@ abstract class BaseFuntion {
   }
 
   void clickAppBarBack() {
+    finish();
+  }
+
+  void finish<T extends Object>([T result]) {
     if (Navigator.canPop(_contextBaseFunction)) {
-      Navigator.pop(_contextBaseFunction);
+      Navigator.pop<T>(_contextBaseFunction, result);
     } else {
       //说明已经没法回退了 ， 可以关闭了
       finishDartPageOrApp();
     }
   }
+
 //
 //
 //  defaultRouteName → String 启动应用程序时嵌入器请求的路由或路径。
@@ -342,144 +350,174 @@ abstract class BaseFuntion {
   ///设置状态栏隐藏或者显示
   void setTopBarVisible(bool isVisible) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      _isTopBarShow = isVisible;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        _isTopBarShow = isVisible;
+      });
+    }
   }
 
   ///默认这个状态栏下，设置颜色
   void setTopBarBackColor(Color color) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      _topBarColor = color == null ? _topBarColor : color;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        _topBarColor = color == null ? _topBarColor : color;
+      });
+    }
   }
 
   ///设置导航栏的字体以及图标颜色
   void setAppBarContentColor(Color contentColor) {
     if (contentColor != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _appBarContentColor = contentColor;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _appBarContentColor = contentColor;
+        });
+      }
     }
   }
 
   ///设置导航栏隐藏或者显示
   void setAppBarVisible(bool isVisible) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      _isAppBarShow = isVisible;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        _isAppBarShow = isVisible;
+      });
+    }
   }
 
   ///默认这个导航栏下，设置颜色
   void setAppBarBackColor(Color color) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      _appBarColor = color == null ? _appBarColor : color;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        _appBarColor = color == null ? _appBarColor : color;
+      });
+    }
   }
 
   void setAppBarTitle(String title) {
     if (title != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _appBarTitle = title;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _appBarTitle = title;
+        });
+      }
     }
   }
 
   void setAppBarRightTitle(String title) {
     if (title != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _appBarRightTitle = title;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _appBarRightTitle = title;
+        });
+      }
     }
   }
 
   ///设置错误提示信息
   void setErrorContent(String content) {
     if (content != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _errorContentMesage = content;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _errorContentMesage = content;
+        });
+      }
     }
   }
 
   ///设置错误页面显示或者隐藏
   void setErrorWidgetVisible(bool isVisible) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      if (isVisible) {
-        //如果可见 说明 空页面要关闭啦
-        _isEmptyWidgetVisible = false;
-      }
-      // 不管如何loading页面要关闭啦，
-      _isLoadingWidgetShow = false;
-      _isErrorWidgetShow = isVisible;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        if (isVisible) {
+          //如果可见 说明 空页面要关闭啦
+          _isEmptyWidgetVisible = false;
+        }
+        // 不管如何loading页面要关闭啦，
+        _isLoadingWidgetShow = false;
+        _isErrorWidgetShow = isVisible;
+      });
+    }
   }
 
   ///设置空页面显示或者隐藏
   void setEmptyWidgetVisible(bool isVisible) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      if (isVisible) {
-        //如果可见 说明 错误页面要关闭啦
-        _isErrorWidgetShow = false;
-      }
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        if (isVisible) {
+          //如果可见 说明 错误页面要关闭啦
+          _isErrorWidgetShow = false;
+        }
 
-      // 不管如何loading页面要关闭啦，
-      _isLoadingWidgetShow = false;
-      _isEmptyWidgetVisible = isVisible;
-    });
+        // 不管如何loading页面要关闭啦，
+        _isLoadingWidgetShow = false;
+        _isEmptyWidgetVisible = isVisible;
+      });
+    }
   }
 
   void setLoadingWidgetVisible(bool isVisible) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      _isLoadingWidgetShow = isVisible;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        _isLoadingWidgetShow = isVisible;
+      });
+    }
   }
 
   ///设置空页面内容
   void setEmptyWidgetContent(String content) {
     if (content != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _emptyWidgetContent = content;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _emptyWidgetContent = content;
+        });
+      }
     }
   }
 
   ///设置错误页面图片
   void setErrorImage(String imagePath) {
     if (imagePath != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _errImgPath = imagePath;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _errImgPath = imagePath;
+        });
+      }
     }
   }
 
   ///设置空页面图片
   void setEmptyImage(String imagePath) {
     if (imagePath != null) {
-      // ignore: invalid_use_of_protected_member
-      _stateBaseFunction.setState(() {
-        _emptyImgPath = imagePath;
-      });
+      if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+        // ignore: invalid_use_of_protected_member
+        _stateBaseFunction.setState(() {
+          _emptyImgPath = imagePath;
+        });
+      }
     }
   }
 
   void setBackIconHinde({bool isHiinde = true}) {
     // ignore: invalid_use_of_protected_member
-    _stateBaseFunction.setState(() {
-      _isBackIconShow = !isHiinde;
-    });
+    if (_stateBaseFunction != null && _stateBaseFunction.mounted) {
+      _stateBaseFunction.setState(() {
+        _isBackIconShow = !isHiinde;
+      });
+    }
   }
 
   ///初始化一些变量 相当于 onCreate ， 放一下 初始化数据操作
@@ -510,7 +548,7 @@ abstract class BaseFuntion {
   }
 
   void log(String content) {
-    print(getClassName() + "------:" + content);
+    print(getWidgetName() + "------:" + content);
   }
 
   ///弹对话框
@@ -539,26 +577,26 @@ abstract class BaseFuntion {
     }
   }
 
-  String getClassName() {
-      if (_contextBaseFunction == null) {
-        return "";
-      }
-      String className = _contextBaseFunction.toString();
-      if (className == null) {
-        return "";
-      }
+  String getWidgetName() {
+    if (_contextBaseFunction == null) {
+      return "";
+    }
+    String className = _contextBaseFunction.toString();
+    if (className == null) {
+      return "";
+    }
 
-      if (BuildConfig.isDebug) {
-        try {
-          className = className.substring(0, className.indexOf("("));
-        } catch (err) {
-          className = "";
-        }
-        return className;
+    if (BuildConfig.isDebug) {
+      try {
+        className = className.substring(0, className.indexOf("("));
+      } catch (err) {
+        className = "";
       }
-
       return className;
     }
+
+    return className;
+  }
 
   ///弹吐司
   void showToast(String content,
@@ -566,17 +604,28 @@ abstract class BaseFuntion {
       ToastGravity gravity = ToastGravity.BOTTOM,
       Color backColor = Colors.black54,
       Color textColor = Colors.white}) {
-    if (content != null) {
-      if (content != null && content.isNotEmpty) {
-        Fluttertoast.showToast(
-            msg: content,
-            toastLength: length,
-            gravity: gravity,
-            timeInSecForIos: 1,
-            backgroundColor: backColor,
-            textColor: textColor,
-            fontSize: 13.0);
-      }
-    }
+      ToastUtils.showToast(content,length: length,gravity: gravity,backColor: backColor,textColor: textColor);
   }
+
+  ///返回 状态管理组件
+  _buildProviderWidget(BuildContext context) {
+    return MultiProvider(providers: getProvider()==null?[]:getProvider(), child: buildWidget(context));
+  }
+  String getClassName() {
+    if (_contextBaseFunction == null) {
+      return null;
+    }
+    String className = _contextBaseFunction.toString();
+    if (className == null) {
+      return null;
+    }
+    className = className.substring(0, className.indexOf("("));
+    return className;
+  }
+
+  //可以复写
+   List<SingleChildCloneableWidget> getProvider(){
+
+    return null;
+   }
 }

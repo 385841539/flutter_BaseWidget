@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_base_widget/base/_base_widget.dart';
+import 'package:provider/src/provider.dart';
 
 import 'PieChartWidget.dart';
 
@@ -49,6 +50,12 @@ class _BingTuPageState extends BaseWidgetState<PieChartPage> {
   @override
   void onResume() {
     // TODO: implement onResume
+  }
+
+  @override
+  List<SingleChildCloneableWidget> getProvider() {
+    // TODO: implement getProvider
+    return null;
   }
 
 }
