@@ -122,7 +122,7 @@ class _FirstPageState extends BaseWidgetState<FirstPage> {
   }
 
   void requestLogin(int i) {
-    RequestMap.requestLogin(ShowLoadingIntercept(this)).listen((da) {
+    RequestMap.requestLogin(ShowLoadingIntercept(this)).then((da) {
       List<LoginResponseResult> lists = da.results;
       for (int i = 0; i < lists.length; i++) {
         log(lists[i].icon);

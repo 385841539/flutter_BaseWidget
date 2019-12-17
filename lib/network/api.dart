@@ -33,7 +33,7 @@ class HttpManager {
   }
 
   //get请求
-  PublishSubject<T> get<T>(
+  Future<T> get<T>(
     String url,
     ResponseTransform<T> transform, {
     Map<String, dynamic> queryParameters,
@@ -45,7 +45,7 @@ class HttpManager {
   }
 
   //post请求
-  PublishSubject<T> post<T>(String url, ResponseTransform<T> transform,
+  Future<T> post<T>(String url, ResponseTransform<T> transform,
       {Map<String, dynamic> queryParameters,
       BaseIntercept baseIntercept,
       bool isCancelable = true,
@@ -60,20 +60,22 @@ class HttpManager {
   /// isGet get 还是 post 请求
   /// baseIntercept用于 加载loading 和 设置 取消CanselToken
   /// isCancelable 是设置改请求是否 能被取消 ， 必须建立在 传入baseWidget或者baseInnerWidgetState的基础之上
-  PublishSubject<T> _requstHttp<T>(String url, ResponseTransform transform,
+  Future<T> _requstHttp<T>(String url, ResponseTransform transform,
       [bool isGet,
       queryParameters,
       BaseIntercept baseIntercept,
       bool isCancelable]) {
     Future future;
 
-    PublishSubject<T> publishSubject = PublishSubject<T>();
+//    PublishSubject<T> publishSubject = PublishSubject<T>();
     if (transform == null) {
       transform = ApiStringTransform(); //内置一个 返回String 的Transform
     }
 
+    Completer<T> completer=new Completer();
+
     transform.setBaseIntercept(baseIntercept);
-    transform.setPublishPubject(publishSubject);
+    transform.setPublishPubject(completer);
     CancelToken cancelToken;
 
     _setInterceptOrcancelAble(baseIntercept, isCancelable, cancelToken);
@@ -91,7 +93,7 @@ class HttpManager {
       _doError(err, transform);
     });
 
-    return publishSubject;
+    return completer.future;
   }
 
   ///取消请求

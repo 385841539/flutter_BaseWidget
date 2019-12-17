@@ -87,21 +87,29 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
   }
 
   void requestLogin() {
-    RequestMap.requestLogin(ShowLoadingIntercept(this)).listen((da) {
-      List<LoginResponseResult> lists = da.results;
-      String stringBuffer = "请求结果:\n"; //不推荐用+拼接字符串，这里只是展示
-      for (int i = 0; i < lists.length; i++) {
-        stringBuffer = stringBuffer + "\n" + lists[i].id;
-      }
-      setState(() {
-        _requestData = stringBuffer;
-        setErrorWidgetVisible(false);
-      });
-    }, onError: (err) {});
+//    RequestMap.requestLogin(ShowLoadingIntercept(this)).then((da) {
+//      List<LoginResponseResult> lists = da.results;
+//      String stringBuffer = "请求结果:\n"; //不推荐用+拼接字符串，这里只是展示
+//      for (int i = 0; i < lists.length; i++) {
+//        stringBuffer = stringBuffer + "\n" + lists[i].id;
+//      }
+//      setState(() {
+//        _requestData = stringBuffer;
+//        setErrorWidgetVisible(false);
+//      });
+//    }, onError: (err) {});
+
+    RequestMap.requestLogin(ShowLoadingIntercept(this)).then((da) {
+      return RequestMap.requestLogin(ShowLoadingIntercept(this));
+    }).then((aaa) {
+      //模拟 futer链式调用
+
+      writeResult(aaa.results);
+    });
   }
 
   void requestErrorRequest() {
-    RequestMap.testErrorrequest(ShowLoadingIntercept(this)).listen((data) {},
+    RequestMap.testErrorrequest(ShowLoadingIntercept(this)).then((data) {},
         onError: (err) {
       print(err.message);
       setErrorWidgetVisible(true);
@@ -112,5 +120,16 @@ class _MyThirdInnerPageState extends BaseInnerWidgetState<ThirdInnerPage> {
   void onClickErrorWidget() {
     requestLogin();
     super.onClickErrorWidget();
+  }
+
+  void writeResult(List<LoginResponseResult> lists) {
+    String stringBuffer = "请求结果:\n"; //不推荐用+拼接字符串，这里只是展示
+    for (int i = 0; i < lists.length; i++) {
+      stringBuffer = stringBuffer + "\n" + lists[i].id;
+    }
+    setState(() {
+      _requestData = stringBuffer;
+      setErrorWidgetVisible(false);
+    });
   }
 }

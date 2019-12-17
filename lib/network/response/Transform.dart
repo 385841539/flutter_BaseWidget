@@ -1,4 +1,6 @@
 
+import 'dart:async';
+
 import 'package:flutter_base_widget/network/api.dart';
 import 'package:flutter_base_widget/network/intercept/base_intercept.dart';
 import 'package:rxdart/subjects.dart';
@@ -7,7 +9,7 @@ import 'package:rxdart/subjects.dart';
 /// T 是最终要得到的 数据类型
 abstract class ResponseTransform<T> {
 
-  PublishSubject<T> publishSubject;
+  Completer<T> publishSubject;
   BaseIntercept baseIntercept;
 
   ResponseTransform();
@@ -16,12 +18,11 @@ abstract class ResponseTransform<T> {
 
 
   void add(T data){
-    publishSubject.add(data);
-    publishSubject.close();
+    publishSubject.complete(data);
     cancelLoading();
   }
 
-  void setPublishPubject(PublishSubject publishSubject2){
+  void setPublishPubject(Completer publishSubject2){
     publishSubject=publishSubject2;
   }
 
@@ -40,8 +41,7 @@ abstract class ResponseTransform<T> {
   ///请求错误以后 做的一些事情
   void callError(MyError error) {
     if(publishSubject!=null) {
-      publishSubject.addError(error);
-      publishSubject.close();
+      publishSubject.completeError(error);
     }
     cancelLoading();
     if (baseIntercept != null) {

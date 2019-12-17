@@ -6,7 +6,7 @@ import 'package:rxdart/rxdart.dart';
 import 'api.dart';
 
 class RequestMap {
-  static PublishSubject requestLogin(BaseIntercept baseIntercept) {
+  static Future<LoginResponseEntity> requestLogin(BaseIntercept baseIntercept) {
 //    String url = "http://gank.io/api/xiandu/category/wow";//可以全部路径
     String url = "xiandu/category/wow"; //也可以抛去 dio 设置的基本 url
     LoginResponseEntity loginResponseEntity =
@@ -14,13 +14,13 @@ class RequestMap {
     loginResponseEntity.error = false;
 
 //
-    return HttpManager().get<LoginResponseEntity>(url, ApiFullTransform(),
+    return HttpManager().get(url, ApiFullTransform(),
         queryParameters: loginResponseEntity.toJson(),
         baseIntercept: baseIntercept,
         isCancelable: false);
   }
 
-  static PublishSubject testErrorrequest(BaseIntercept baseIntercept) {
+  static Future<LoginResponseEntity> testErrorrequest(BaseIntercept baseIntercept) {
     String urlError = "error";
     return HttpManager().get<LoginResponseEntity>(urlError = "error",ApiFullTransform(),
         baseIntercept: baseIntercept);
