@@ -12,20 +12,20 @@ if (flutterRoot == null) {
 }
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
-if (flutterVersionCode == null) {
-    flutterVersionCode = '1'
-}
+//if (flutterVersionCode == null) {
+flutterVersionCode = '103'
+//}
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
-if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
-}
+//if (flutterVersionName == null) {
+flutterVersionName = '1.0.3'
+//}
 
 apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     lintOptions {
         disable 'InvalidPackage'
@@ -33,13 +33,30 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.fluttershop.flutter_base_widget"
-        minSdkVersion 17
-        targetSdkVersion 28
+        applicationId "com.ruedy.flutter_base_lib"
+        minSdkVersion 21
+        targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+//
+//    signingConfigs {
+//
+//        release {
+//            storeFile file("baseFlutter.keystore")    //key存放位置
+//            storePassword "123123"          //打开key的密码
+//            keyAlias "baselib"        //key 别名
+//            keyPassword "123123"    //key的密码
+//        }
+//        //微信分享需要签名，所以在debug下方便测试，打上签名
+//        debug {
+//            storeFile file("baseFlutter.keystore")    //key存放位置
+//            storePassword "123123"          //打开key的密码
+//            keyAlias "baselib"        //key 别名
+//            keyPassword "123123"    //key的密码
+//        }
+//    }
 
     buildTypes {
         release {
@@ -47,15 +64,21 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
+        debug {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+        }
     }
+//
+//    android {
+//        //...
+//        compileOptions {
+//            sourceCompatibility JavaVersion.VERSION_1_8
+//            targetCompatibility JavaVersion.VERSION_1_8
+//        }
 }
 
 flutter {
     source '../..'
-}
-
-dependencies {
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
