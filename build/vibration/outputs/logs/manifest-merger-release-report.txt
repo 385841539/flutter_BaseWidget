@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:1:1-5:12
+INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:1:1-5:12
+	package
+		ADDED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:4:5-65
+	android:name
+		ADDED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:4:22-63
+uses-sdk
+INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml

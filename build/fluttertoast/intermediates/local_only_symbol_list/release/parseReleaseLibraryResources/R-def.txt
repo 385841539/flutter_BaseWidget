@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+drawable toast_bg
+id custom_toast_container
+id text
+layout toast_custom

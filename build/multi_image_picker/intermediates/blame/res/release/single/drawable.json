@@ -1,0 +1,330 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_edit_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_edit_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/design_fab_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/ic_mtrl_chip_checked_circle.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/ic_mtrl_chip_checked_circle.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_ab_back_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_calendar_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_calendar_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_tab_indicator_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_dropdown_arrow.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_dropdown_arrow.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/navigation_empty_icon.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/navigation_empty_icon.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_keyboard_arrow_right_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_keyboard_arrow_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_clear_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_clear_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_dialog_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_dialog_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/design_ic_visibility_off.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_menu_arrow_down_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_menu_arrow_down_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/drawable_detail_gradient.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable/drawable_detail_gradient.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/ic_mtrl_chip_checked_black.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/ic_mtrl_chip_checked_black.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/avd_hide_password.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_popupmenu_background_dark.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_popupmenu_background_dark.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_seekbar_track_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_check_material_anim.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_check_material_anim.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_checkbox_unchecked_mtrl.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_checkbox_unchecked_mtrl.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/design_bottom_navigation_item_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/design_ic_visibility.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/215cb9dfdf420f2a2a5beabdaca3b6e9/core-1.2.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_list_selector_holo_light.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_check_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/tooltip_frame_dark.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/tooltip_frame_dark.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_search_api_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_dialog_material_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_menu_arrow_up_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_menu_arrow_up_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/ic_mtrl_chip_close_circle.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/ic_mtrl_chip_close_circle.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_list_divider_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_vector_test.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a8b44e5a9c763b88b67a9b42bb166b63/appcompat-resources-1.1.0/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_checkbox_checked_mtrl.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_checkbox_checked_mtrl.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_clear_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_popupmenu_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_popupmenu_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_radio_material_anim.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_radio_material_anim.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ratingbar_small_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_colored_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_radio_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ratingbar_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_ic_cancel.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_ic_cancel.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/tooltip_frame_light.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/tooltip_frame_light.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_textfield_search_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_item_background_holo_dark.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/avd_show_password.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/avd_show_password.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/215cb9dfdf420f2a2a5beabdaca3b6e9/core-1.2.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/ic_mtrl_checked_circle.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/ic_mtrl_checked_circle.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_radio_on_to_off_mtrl_animation.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_radio_on_to_off_mtrl_animation.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_radio_off_to_on_mtrl_animation.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_radio_off_to_on_mtrl_animation.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/design_snackbar_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/material_ic_keyboard_arrow_left_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/material_ic_keyboard_arrow_left_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/215cb9dfdf420f2a2a5beabdaca3b6e9/core-1.2.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_ic_arrow_drop_down.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_ic_arrow_drop_down.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/215cb9dfdf420f2a2a5beabdaca3b6e9/core-1.2.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_item_background_holo_light.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_cab_background_top_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_radio_on_mtrl.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_radio_on_mtrl.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_radio_off_mtrl.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_radio_off_mtrl.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_text_cursor_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_ic_arrow_drop_up.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_ic_arrow_drop_up.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_tabs_default_indicator.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_tabs_default_indicator.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/mtrl_ic_error.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/mtrl_ic_error.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/abc_switch_thumb_material.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/test_custom_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/test_custom_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/design_password_eye.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/drawable/design_password_eye.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
+    }
+]

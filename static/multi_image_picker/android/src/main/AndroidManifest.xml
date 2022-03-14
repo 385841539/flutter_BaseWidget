@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.vitanov.multiimagepicker">
+    <application>
+
+
+        <provider
+            android:name="com.vitanov.multiimagepicker.MultiImageProvider"
+            android:authorities="${applicationId}.multiFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/multi_common_file_paths" />
+        </provider>
+
+
+    </application>
+</manifest>

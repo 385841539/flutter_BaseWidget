@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_extended_fab_state_list_animator.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_extended_fab_state_list_animator.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_chip_state_list_anim.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_chip_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_fab_transformation_sheet_expand_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_extended_fab_show_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_extended_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_extended_fab_hide_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_extended_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_extended_fab_change_size_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_extended_fab_change_size_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_fab_transformation_sheet_collapse_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_fab_transformation_sheet_collapse_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_card_state_list_anim.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_card_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/design_fab_hide_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/design_fab_show_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/design_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_btn_unelevated_state_list_anim.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_fab_hide_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_btn_state_list_anim.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_btn_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/animator/mtrl_fab_show_motion_spec.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/animator/mtrl_fab_show_motion_spec.xml"
+    }
+]

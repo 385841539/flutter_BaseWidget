@@ -1,0 +1,29 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vitanov.multiimagepicker" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml
+6
+7    <application>
+7-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:3:5-17:19
+8        <provider
+8-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:6:9-14:20
+9            android:name="com.vitanov.multiimagepicker.MultiImageProvider"
+9-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:7:13-75
+10            android:authorities="dollar_openBracket_applicationId_closeBracket.multiFileProvider"
+10-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:8:13-69
+11            android:exported="false"
+11-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:9:13-37
+12            android:grantUriPermissions="true" >
+12-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:10:13-47
+13            <meta-data
+13-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:11:13-13:67
+14                android:name="android.support.FILE_PROVIDER_PATHS"
+14-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:12:17-67
+15                android:resource="@xml/multi_common_file_paths" />
+15-->/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/static/multi_image_picker/android/src/main/AndroidManifest.xml:13:17-64
+16        </provider>
+17    </application>
+18
+19</manifest>

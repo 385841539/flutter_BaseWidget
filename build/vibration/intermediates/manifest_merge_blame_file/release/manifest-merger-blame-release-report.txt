@@ -1,0 +1,12 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.benjaminabel.vibration" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.VIBRATE" />
+7-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:4:5-65
+7-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/vibration-1.7.3/android/src/main/AndroidManifest.xml:4:22-63
+8
+9</manifest>

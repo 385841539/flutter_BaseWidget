@@ -1,0 +1,18 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="top.kikt.imagescanner" >
+4
+5    <uses-sdk android:minSdkVersion="16" />
+5-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+7-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml:3:5-80
+7-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml:3:22-78
+8    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+8-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml:4:5-79
+8-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml:4:22-77
+9    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+9-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml:6:5-80
+9-->/Users/ruedy/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/photo_manager-1.3.10/android/src/main/AndroidManifest.xml:6:22-77
+10
+11</manifest>

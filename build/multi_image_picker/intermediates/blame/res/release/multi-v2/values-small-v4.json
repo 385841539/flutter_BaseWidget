@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/incremental/mergeReleaseResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/values-small-v4/values-small-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,128,198,270",
+                        "endColumns": "72,69,71,69",
+                        "endOffsets": "123,193,265,335"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/values-small-v4/values-small-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/values-small-v4/values-small-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,128,198,270",
+                        "endColumns": "72,69,71,69",
+                        "endOffsets": "123,193,265,335"
+                    }
+                }
+            ]
+        }
+    ]
+}

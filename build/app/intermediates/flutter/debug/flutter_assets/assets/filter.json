@@ -1,0 +1,153 @@
+{
+  "structure": [
+    {
+      "title": "科室",
+      "index": 1,
+      "param": "departmentId",
+      "type": "filter",
+      "value": "1"
+    },
+    {
+      "title": "区域",
+      "index": 2,
+      "param": "region",
+      "type": "filter"
+    },
+    {
+      "title": "综合排序",
+      "index": 3,
+      "param": "sort",
+      "type": "filter"
+    },
+    {
+      "title": "筛选",
+      "index": 4,
+      "param": "",
+      "type": "menu"
+    },
+    {
+      "title": "医院级别",
+      "index": 401,
+      "param": "hospitalLevel",
+      "type": "filter"
+    },
+    {
+      "title": "服务类型",
+      "index": 402,
+      "param": "service",
+      "type": "filter"
+    },
+    {
+      "title": "医生级别",
+      "index": 403,
+      "param": "doctorRank",
+      "type": "filter"
+    }
+  ],
+  "values": {
+    "doctorRank": [
+      {
+        "name": "主任医师",
+        "value": "chiefPhysician"
+      },
+      {
+        "name": "副主任医师",
+        "value": "deputyChiefPhysician"
+      },
+      {
+        "name": "主治医师",
+        "value": "attendingPhysician"
+      }
+    ],
+    "departmentId": [
+      {
+        "name": "全部科室",
+        "value": "0"
+      },
+      {
+        "name": "内科",
+        "value": "1"
+      },
+      {
+        "name": "外科",
+        "value": "2"
+      },
+      {
+        "name": "儿科",
+        "value": "4"
+      },
+      {
+        "name": "眼科",
+        "value": "7"
+      },
+      {
+        "name": "妇产科",
+        "value": "13"
+      },
+      {
+        "name": "中西医结合科",
+        "value": "3"
+      },
+      {
+        "name": "口腔科",
+        "value": "8"
+      },
+      {
+        "name": "耳鼻咽喉科",
+        "value": "6"
+      },
+      {
+        "name": "皮肤科",
+        "value": "5"
+      },
+      {
+        "name": "医学影像科",
+        "value": "16"
+      },
+      {
+        "name": "全医疗科",
+        "value": "9"
+      },
+      {
+        "name": "急诊医学科",
+        "value": "10"
+      },
+      {
+        "name": "精神科",
+        "value": "11"
+      },
+      {
+        "name": "中医科",
+        "value": "12"
+      },
+      {
+        "name": "肿瘤科",
+        "value": "14"
+      },
+      {
+        "name": "医学检验科",
+        "value": "15"
+      }
+    ],
+    "region": [
+      {
+        "name": "全国",
+        "value": ""
+      }
+    ],
+    "sort": [
+      {
+        "name": "综合排序",
+        "value": "recommendedRating"
+      },
+      {
+        "name": "接诊量",
+        "value": "totalPatients"
+      },
+      {
+        "name": "好评率",
+        "value": "ratingRate"
+      }
+    ]
+  }
+}

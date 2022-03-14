@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.ruedy.flutter_common_plugin">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <application>
+
+
+        <activity android:name="com.ruedy.flutter_common_plugin.activity.CommonSchemeActivity">
+            <!-- 要想在别的App上能成功调起App，必须添加intent过滤器 -->
+            <!-- 协议部分，随便设置 -->
+            <intent-filter>
+                <!--协议部分，随便设置-->
+                <data
+                    android:host="mtime"
+                    android:scheme="common_plugin" />
+                <!--下面这几行也必须得设置-->
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+    </application>
+
+
+</manifest>

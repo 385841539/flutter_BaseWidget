@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vitanov.multiimagepicker" >
+
+    <uses-sdk android:minSdkVersion="16" />
+
+    <application>
+        <provider
+            android:name="com.vitanov.multiimagepicker.MultiImageProvider"
+            android:authorities="dollar_openBracket_applicationId_closeBracket.multiFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/multi_common_file_paths" />
+        </provider>
+    </application>
+
+</manifest>

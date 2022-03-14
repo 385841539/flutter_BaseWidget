@@ -1,0 +1,5 @@
+R_DEF: Internal format may change without notice
+local
+id btn_bring_to_front
+layout activity_scheme
+layout activity_test

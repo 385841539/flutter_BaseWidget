@@ -1,0 +1,73 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:1:1-36:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:1:1-36:12
+	package
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:2:3-44
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:6:5-68
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:6:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.CAMERA
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:9:5-65
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:9:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:11:22-63
+uses-permission#android.permission.REORDER_TASKS
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:14:5-72
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:14:22-69
+application
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:16:5-33:19
+activity#com.ruedy.flutter_common_plugin.activity.CommonSchemeActivity
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:19:9-32:20
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:19:19-95
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:mtime+data:scheme:common_plugin
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:22:13-31:29
+data
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:24:17-26:54
+	android:host
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:25:21-41
+	android:scheme
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:26:21-51
+category#android.intent.category.DEFAULT
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:28:27-73
+action#android.intent.action.VIEW
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:29:25-66
+category#android.intent.category.BROWSABLE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:30:17-78
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml:30:27-75
+uses-sdk
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/flutter_common_plugin/android/src/main/AndroidManifest.xml

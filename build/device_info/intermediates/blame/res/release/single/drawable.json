@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/drawable/notification_tile_bg.xml"
+    }
+]

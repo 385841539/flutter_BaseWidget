@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_in.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/anim-v21/design_bottom_sheet_slide_out.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/anim-v21/design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/anim-v21/mtrl_bottom_sheet_slide_in.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/anim-v21/mtrl_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/anim-v21/mtrl_bottom_sheet_slide_out.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/anim-v21/mtrl_bottom_sheet_slide_out.xml"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/mtrl_fast_out_slow_in.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/interpolator/mtrl_fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/mtrl_linear_out_slow_in.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/interpolator/mtrl_linear_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/mtrl_linear.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/interpolator/mtrl_linear.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/fast_out_slow_in.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/b98875bd0fc42a14a2228f29b03cea1b/appcompat-1.1.0/res/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/interpolator/mtrl_fast_out_linear_in.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/res/interpolator/mtrl_fast_out_linear_in.xml"
+    }
+]

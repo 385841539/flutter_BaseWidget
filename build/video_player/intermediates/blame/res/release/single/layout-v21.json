@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/7bcac1eefa2bb1f0e62878f30cab7d5d/core-1.1.0/res/layout-v21/notification_action.xml"
+    }
+]

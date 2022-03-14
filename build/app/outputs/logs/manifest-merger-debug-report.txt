@@ -1,0 +1,464 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+MERGED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+MERGED from [:video_player] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-36:12
+MERGED from [:fluttertoast] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_image_compress] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_image_compress/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:sqflite] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:device_info] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:package_info] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/package_info/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:loading_indicator_view] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/loading_indicator_view/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-14:12
+MERGED from [:webview_flutter] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:shared_preferences] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:image_gallery_saver] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/image_gallery_saver/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:vibration] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/vibration/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e803c405295f7452cca471d0a94eeafd/exoplayer-hls-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c14dc5a5e2a04fca58c3542af81aabc6/exoplayer-dash-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/da79937e56d2462e9697083746f9970b/exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/99724ea5089bbe2dbcf1157489fa91ed/exoplayer-core-2.14.1/AndroidManifest.xml:17:1-26:12
+MERGED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:2:1-34:12
+MERGED from [com.google.android.material:material:1.2.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/922c05bfcbf8b66c504b333ae7878a3a/appcompat-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/40cce47fd9a36cd7dc2dfa671ca72348/core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c499836e38ca52e63797a47e140c4c29/webkit-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/5021203c65afb3a0fa19fd608e6427dd/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6f7bfd8ca29d68b37765214c217e1964/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/57e871b1d847564ed6aa74ecb801799d/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/2799b4216eeaf9cf5ddc94b35fe1c804/fragment-1.3.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7fba6922c649ffda5f5a067ccc19de03/activity-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/d04a0660b32ec91f9b3e17df48167411/appcompat-resources-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8a53523a3c8d710d17d5949f3f565490/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4742986020b16338349efab7c0430e79/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6bf89790b494d47950e0a806ce8e48fd/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7e0c2ed46e9dea4d3d25504cd9d8742d/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c674be85964857244d23dd60b5180517/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/fb9d824a69d0e4b2b7c94d5ff07f8ecd/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/2e95c5f7e18d409bb815b2ed5ddad6e1/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/77dcc29b1c766076d04584239156ec98/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a88ac67bc2e9de87f5379afea6bf1ce2/core-1.6.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3bc34d29426eb93ae8e206f6783180d7/exifinterface-1.3.2/AndroidManifest.xml:17:1-24:12
+MERGED from [top.zibin:Luban:1.1.8] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/d202569e3c6faae628a40143a4c3591f/Luban-1.1.8/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/fdffcf51c1991724eac66bc700f02af2/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3c776696e05f3a1113f97617194f88c1/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:17:1-26:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7f493c0ce7cea9d50e5c2adeb75186b8/gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/002e701a9ddb16e656c03ddcdc40a4bd/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/ec80b48c6a0f03369f06e0b064ae35b5/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/b871a3515e9b65fdaacfeaf4bba91c9e/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8ee168b8b61999e2d14c1169f7a937df/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4b5bf73089c267a8184586281f7c6c96/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/cca906605b1b7521abd613ce88df909e/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/1b5bc214448854d365cabff22e77973c/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8e113eaf4002616ba0f1965013c7c206/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7970f48d832a7b20e70bc88057cf5eb8/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e9083dda31c9fe0809679a196521edec/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6e91cc8e1e7a2c1c68d77bdec81795e3/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/17bc7170cee91fceb72112256832671c/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3f338f1684531f39aae5de7ed087929b/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4c150c7e83f5997df43fb6ec2f449d75/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+	package
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:2:5-41
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:1-81:12
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:10:5-67
+MERGED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:10:5-67
+MERGED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:10:5-67
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:10:22-64
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:11:5-68
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-68
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:11:22-65
+uses-feature#android.hardware.camera
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:13:5-60
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:13:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:14:5-70
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:14:19-67
+uses-permission#android.permission.CAMERA
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:15:5-65
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-65
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:15:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:16:5-71
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:16:22-68
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:17:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/99724ea5089bbe2dbcf1157489fa91ed/exoplayer-core-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/99724ea5089bbe2dbcf1157489fa91ed/exoplayer-core-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3c776696e05f3a1113f97617194f88c1/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3c776696e05f3a1113f97617194f88c1/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:17:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:18:22-76
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:19:22-77
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:20:5-74
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:20:22-72
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:21:5-81
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:21:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:22:5-80
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-80
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-80
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-80
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:22:22-77
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:23:22-79
+uses-permission#android.permission.BLUETOOTH
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:27:5-68
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:27:22-65
+application
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:30:5-80:19
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-34:19
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-34:19
+MERGED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-12:19
+MERGED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:11:5-32:19
+MERGED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:11:5-32:19
+MERGED from [com.google.android.material:material:1.2.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/AndroidManifest.xml:22:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/57e871b1d847564ed6aa74ecb801799d/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/57e871b1d847564ed6aa74ecb801799d/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a88ac67bc2e9de87f5379afea6bf1ce2/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a88ac67bc2e9de87f5379afea6bf1ce2/core-1.6.0/AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7f493c0ce7cea9d50e5c2adeb75186b8/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7f493c0ce7cea9d50e5c2adeb75186b8/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/1b5bc214448854d365cabff22e77973c/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/1b5bc214448854d365cabff22e77973c/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3f338f1684531f39aae5de7ed087929b/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3f338f1684531f39aae5de7ed087929b/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+	android:requestLegacyExternalStorage
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:34:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a88ac67bc2e9de87f5379afea6bf1ce2/core-1.6.0/AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:32:9-41
+	android:icon
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:35:9-43
+	android:usesCleartextTraffic
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:33:9-44
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:31:9-38
+activity#com.ruedy.flutter_base_lib.MainActivity
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:36:9-64:20
+	android:launchMode
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:38:13-43
+	android:hardwareAccelerated
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:41:13-47
+	android:windowSoftInputMode
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:42:13-55
+	android:configChanges
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:40:13-163
+	android:theme
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:39:13-47
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:37:13-41
+meta-data#io.flutter.embedding.android.NormalTheme
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:47:13-50:17
+	android:resource
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:49:15-52
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:48:15-70
+meta-data#io.flutter.embedding.android.SplashScreenDrawable
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:56:13-59:17
+	android:resource
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:58:15-61
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:57:15-79
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:60:13-63:29
+action#android.intent.action.MAIN
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:61:17-68
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:61:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:62:17-76
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:62:27-74
+activity#com.ruedy.flutter_base_lib.TestActivity
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:68:5-74:16
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:68:15-43
+meta-data#flutterEmbedding
+ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:77:9-79:33
+	android:value
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:79:13-30
+	android:name
+		ADDED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml:78:13-44
+uses-sdk
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+MERGED from [:video_player] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:video_player] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/video_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/fluttertoast/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flutter_image_compress] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_image_compress/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_image_compress] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_image_compress/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:device_info] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:device_info] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/device_info/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:package_info] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/package_info/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:package_info] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/package_info/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:loading_indicator_view] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/loading_indicator_view/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:loading_indicator_view] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/loading_indicator_view/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/webview_flutter/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/permission_handler/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/shared_preferences/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_gallery_saver] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/image_gallery_saver/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_gallery_saver] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/image_gallery_saver/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:vibration] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/vibration/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:vibration] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/vibration/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e803c405295f7452cca471d0a94eeafd/exoplayer-hls-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e803c405295f7452cca471d0a94eeafd/exoplayer-hls-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c14dc5a5e2a04fca58c3542af81aabc6/exoplayer-dash-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c14dc5a5e2a04fca58c3542af81aabc6/exoplayer-dash-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/da79937e56d2462e9697083746f9970b/exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/da79937e56d2462e9697083746f9970b/exoplayer-smoothstreaming-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/99724ea5089bbe2dbcf1157489fa91ed/exoplayer-core-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/99724ea5089bbe2dbcf1157489fa91ed/exoplayer-core-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:7:5-9:41
+MERGED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.2.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a12c4452417c7533fc84bcdbea329623/material-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/922c05bfcbf8b66c504b333ae7878a3a/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/922c05bfcbf8b66c504b333ae7878a3a/appcompat-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/40cce47fd9a36cd7dc2dfa671ca72348/core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/40cce47fd9a36cd7dc2dfa671ca72348/core-ktx-1.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c499836e38ca52e63797a47e140c4c29/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c499836e38ca52e63797a47e140c4c29/webkit-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/5021203c65afb3a0fa19fd608e6427dd/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/5021203c65afb3a0fa19fd608e6427dd/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6f7bfd8ca29d68b37765214c217e1964/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6f7bfd8ca29d68b37765214c217e1964/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/57e871b1d847564ed6aa74ecb801799d/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/57e871b1d847564ed6aa74ecb801799d/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/2799b4216eeaf9cf5ddc94b35fe1c804/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.4] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/2799b4216eeaf9cf5ddc94b35fe1c804/fragment-1.3.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7fba6922c649ffda5f5a067ccc19de03/activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7fba6922c649ffda5f5a067ccc19de03/activity-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/d04a0660b32ec91f9b3e17df48167411/appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/d04a0660b32ec91f9b3e17df48167411/appcompat-resources-1.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8a53523a3c8d710d17d5949f3f565490/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8a53523a3c8d710d17d5949f3f565490/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4742986020b16338349efab7c0430e79/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4742986020b16338349efab7c0430e79/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6bf89790b494d47950e0a806ce8e48fd/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6bf89790b494d47950e0a806ce8e48fd/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7e0c2ed46e9dea4d3d25504cd9d8742d/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7e0c2ed46e9dea4d3d25504cd9d8742d/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c674be85964857244d23dd60b5180517/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/c674be85964857244d23dd60b5180517/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/fb9d824a69d0e4b2b7c94d5ff07f8ecd/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/fb9d824a69d0e4b2b7c94d5ff07f8ecd/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/2e95c5f7e18d409bb815b2ed5ddad6e1/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/2e95c5f7e18d409bb815b2ed5ddad6e1/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/77dcc29b1c766076d04584239156ec98/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/77dcc29b1c766076d04584239156ec98/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a88ac67bc2e9de87f5379afea6bf1ce2/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/a88ac67bc2e9de87f5379afea6bf1ce2/core-1.6.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3bc34d29426eb93ae8e206f6783180d7/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3bc34d29426eb93ae8e206f6783180d7/exifinterface-1.3.2/AndroidManifest.xml:20:5-22:41
+MERGED from [top.zibin:Luban:1.1.8] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/d202569e3c6faae628a40143a4c3591f/Luban-1.1.8/AndroidManifest.xml:7:5-9:41
+MERGED from [top.zibin:Luban:1.1.8] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/d202569e3c6faae628a40143a4c3591f/Luban-1.1.8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/fdffcf51c1991724eac66bc700f02af2/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/fdffcf51c1991724eac66bc700f02af2/jetified-exoplayer-extractor-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3c776696e05f3a1113f97617194f88c1/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3c776696e05f3a1113f97617194f88c1/jetified-exoplayer-common-2.14.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7f493c0ce7cea9d50e5c2adeb75186b8/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7f493c0ce7cea9d50e5c2adeb75186b8/gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/002e701a9ddb16e656c03ddcdc40a4bd/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/002e701a9ddb16e656c03ddcdc40a4bd/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/ec80b48c6a0f03369f06e0b064ae35b5/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/ec80b48c6a0f03369f06e0b064ae35b5/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/b871a3515e9b65fdaacfeaf4bba91c9e/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/b871a3515e9b65fdaacfeaf4bba91c9e/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8ee168b8b61999e2d14c1169f7a937df/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8ee168b8b61999e2d14c1169f7a937df/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4b5bf73089c267a8184586281f7c6c96/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4b5bf73089c267a8184586281f7c6c96/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/cca906605b1b7521abd613ce88df909e/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/cca906605b1b7521abd613ce88df909e/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/1b5bc214448854d365cabff22e77973c/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/1b5bc214448854d365cabff22e77973c/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8e113eaf4002616ba0f1965013c7c206/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/8e113eaf4002616ba0f1965013c7c206/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7970f48d832a7b20e70bc88057cf5eb8/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/7970f48d832a7b20e70bc88057cf5eb8/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e9083dda31c9fe0809679a196521edec/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e9083dda31c9fe0809679a196521edec/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6e91cc8e1e7a2c1c68d77bdec81795e3/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/6e91cc8e1e7a2c1c68d77bdec81795e3/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/17bc7170cee91fceb72112256832671c/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/17bc7170cee91fceb72112256832671c/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3f338f1684531f39aae5de7ed087929b/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/3f338f1684531f39aae5de7ed087929b/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4c150c7e83f5997df43fb6ec2f449d75/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/4c150c7e83f5997df43fb6ec2f449d75/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/android/app/src/debug/AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-66
+MERGED from [:vibration] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/vibration/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-66
+MERGED from [:vibration] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/vibration/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-63
+uses-permission#android.permission.REORDER_TASKS
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-72
+	android:name
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-69
+activity#com.ruedy.flutter_common_plugin.activity.CommonSchemeActivity
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-33:20
+	android:name
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:16:19-95
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:mtime+data:scheme:common_plugin
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-32:29
+data
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:23:17-25:54
+	android:host
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:24:21-41
+	android:scheme
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:25:21-51
+category#android.intent.category.DEFAULT
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:27:17-76
+	android:name
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:27:27-73
+action#android.intent.action.VIEW
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:29:17-69
+	android:name
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:29:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+	android:name
+		ADDED from [:flutter_common_plugin] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/flutter_common_plugin/intermediates/library_manifest/debug/AndroidManifest.xml:31:27-75
+provider#com.vitanov.multiimagepicker.MultiImageProvider
+ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-69
+	android:exported
+		ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-75
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-15:67
+	android:resource
+		ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:17-64
+	android:name
+		ADDED from [:multi_image_picker] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:17-67
+uses-permission#android.permission.ACCESS_MEDIA_LOCATION
+ADDED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from [:photo_manager] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/photo_manager/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-77
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/url_launcher/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-74
+provider#com.sangcomz.fishbun.FishBunFileProvider
+ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:12:9-20:20
+	android:grantUriPermissions
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:16:13-47
+	android:authorities
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:14:13-71
+	android:exported
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:15:13-37
+	android:name
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:13:13-68
+activity#com.sangcomz.fishbun.ui.album.ui.AlbumActivity
+ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:22:9-25:51
+	android:label
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:24:13-42
+	android:theme
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:25:13-48
+	android:name
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:23:13-74
+activity#com.sangcomz.fishbun.ui.picker.PickerActivity
+ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:26:9-28:51
+	android:theme
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:28:13-48
+	android:name
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:27:13-73
+activity#com.sangcomz.fishbun.ui.detail.ui.DetailImageActivity
+ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:29:9-31:54
+	android:theme
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:31:13-51
+	android:name
+		ADDED from [com.sangcomz:FishBun:1.0.0-alpha05] /Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/AndroidManifest.xml:30:13-81

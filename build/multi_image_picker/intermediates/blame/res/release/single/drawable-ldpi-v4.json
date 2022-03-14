@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_done_white_24dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_done_white_24dp.png"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_photo_library_gray_100dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_photo_library_gray_100dp.png"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_arrow_back_white_24dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_arrow_back_white_24dp.png"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_add_a_photo_white_24dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_add_a_photo_white_24dp.png"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_photo_white_24dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_photo_white_24dp.png"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_done_all_white_24dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_done_all_white_24dp.png"
+    },
+    {
+        "merged": "/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/multi_image_picker/intermediates/res/merged/release/drawable-ldpi-v4/ic_add_a_photo_gray_100dp.png",
+        "source": "/Users/ruedy/.gradle/caches/transforms-2/files-2.1/e0e89e1718ea68d92e8364e1ec77213e/FishBun-1.0.0-alpha05/res/drawable-ldpi-v4/ic_add_a_photo_gray_100dp.png"
+    }
+]

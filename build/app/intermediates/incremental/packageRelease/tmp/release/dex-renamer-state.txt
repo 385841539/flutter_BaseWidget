@@ -1,0 +1,4 @@
+#Mon Mar 14 14:15:30 CST 2022
+base.0=/Users/ruedy/project/flutter/fluttetbase/flutter_BaseWidget/build/app/intermediates/transforms/r8/release/0/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
