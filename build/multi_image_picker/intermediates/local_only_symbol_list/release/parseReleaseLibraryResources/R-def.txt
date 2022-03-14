@@ -1,3 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-xml multi_common_file_paths
