@@ -8,7 +8,7 @@
 
 ###扫码体验呢
 
-![image](https://raw.githubusercontent.com/385841539/flutter_BaseWidget/master/file/app-release.apk)
+![image](https://raw.githubusercontent.com/385841539/flutter_BaseWidget/master/file/%E6%89%AB%E7%A0%81%E4%BD%93%E9%AA%8C.png)
 
 
 
