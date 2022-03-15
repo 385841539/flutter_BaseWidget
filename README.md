@@ -6,8 +6,7 @@
 ### flutter 版本为: 2.0.5 ，实现 原理暂时未更新，时间充裕了补上，demo一跑啥都有
 ### master_1.1分支为 flutter1.9版本老代码，当时思维不全，现暂停维护。
 
-###扫码体验呢
-
+### 扫码体验:
 ![image](https://raw.githubusercontent.com/385841539/flutter_BaseWidget/master/file/%E6%89%AB%E7%A0%81%E4%BD%93%E9%AA%8C.png)
 
 
