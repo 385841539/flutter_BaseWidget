@@ -7,6 +7,7 @@
 ### master_1.1分支为 flutter1.9版本老代码，当时思维不全，现暂停维护。
 
 ###扫码体验呢
+
 ![image](https://raw.githubusercontent.com/385841539/flutter_BaseWidget/master/file/app-release.apk)
 
 
