@@ -13,13 +13,13 @@ class OrderDialogContainer extends StatefulWidget {
     return dialogState;
   }
 
-  void addOrderDialog(FBBaseOrderDialog fbBaseOrderDialog) {
+  void addOrderDialog(FBBaseOrderDialogDelege fbBaseOrderDialog) {
     // dialogs[0] = fbBaseOrderDialog;
     dialogState.addOrderDialog(fbBaseOrderDialog);
     // createState().context;
   }
 
-  void removeDialog(FBBaseOrderDialog fbBaseOrderDialog) {
+  void removeDialog(FBBaseOrderDialogDelege fbBaseOrderDialog) {
     dialogState._removeOrderDialog(fbBaseOrderDialog);
   }
 
@@ -30,9 +30,9 @@ class OrderDialogContainer extends StatefulWidget {
 
 class _OrderDialogContainerState
     extends BaseState<OrderDialogContainer, BaseProvide> {
-  final List<FBBaseOrderDialog> _dialogs = List();
+  final List<FBBaseOrderDialogDelege> _dialogs = List();
 
-  void addOrderDialog(FBBaseOrderDialog fbBaseOrderDialog) {
+  void addOrderDialog(FBBaseOrderDialogDelege fbBaseOrderDialog) {
     // dialogs[0] = fbBaseOrderDialog;
     // createState().context;
 
@@ -74,7 +74,7 @@ class _OrderDialogContainerState
         if (_dialogs == null || _dialogs.isEmpty) {
           return true;
         } else {
-          FBBaseOrderDialog fb = _dialogs.last;
+          FBBaseOrderDialogDelege fb = _dialogs.last;
           if (fb.isOnBackCancel) {
             //说明能返回消失改弹窗
             _removeOrderDialog(fb);
@@ -100,7 +100,7 @@ class _OrderDialogContainerState
     List<Widget> lists = [];
 
     for (int i = 0; i < _dialogs.length; i++) {
-      FBBaseOrderDialog fbBaseOrderDialog = _dialogs[i];
+      FBBaseOrderDialogDelege fbBaseOrderDialog = _dialogs[i];
 
       lists.add(Stack(
         //构建dialog item
@@ -126,7 +126,7 @@ class _OrderDialogContainerState
     return lists;
   }
 
-  void _addDialog(FBBaseOrderDialog fbBaseOrderDialog) {
+  void _addDialog(FBBaseOrderDialogDelege fbBaseOrderDialog) {
     if (_dialogs.isEmpty) {
       _dialogs.add(fbBaseOrderDialog);
     } else {
@@ -137,7 +137,7 @@ class _OrderDialogContainerState
     }
   }
 
-  void _removeOrderDialog(FBBaseOrderDialog fbBaseOrderDialog) {
+  void _removeOrderDialog(FBBaseOrderDialogDelege fbBaseOrderDialog) {
     if (fbBaseOrderDialog != null && _dialogs != null) {
       _dialogs.remove(fbBaseOrderDialog);
       if (_dialogs.isEmpty) {
@@ -149,10 +149,10 @@ class _OrderDialogContainerState
     }
   }
 
-  void _addByOrder(FBBaseOrderDialog fbBaseOrderDialog) {
+  void _addByOrder(FBBaseOrderDialogDelege fbBaseOrderDialog) {
     for (int i = _dialogs.length - 1; i >= 0; i--) {
       //从后遍历现有弹窗，发现插进来的 层级大的话直接显示， 并停止遍历
-      FBBaseOrderDialog comPareDialog = _dialogs[i];
+      FBBaseOrderDialogDelege comPareDialog = _dialogs[i];
 
       if (fbBaseOrderDialog.zIndex >= comPareDialog.zIndex) {
         _dialogs.insert(i + 1, fbBaseOrderDialog);
@@ -166,7 +166,7 @@ class _OrderDialogContainerState
     if (_dialogs == null || _dialogs.isEmpty) return false;
 
     for (int i = 0; i < _dialogs.length; i++) {
-      FBBaseOrderDialog fbBaseOrderDialog = _dialogs[i];
+      FBBaseOrderDialogDelege fbBaseOrderDialog = _dialogs[i];
       if (fbBaseOrderDialog.widget == widget) {
         _removeOrderDialog(fbBaseOrderDialog);
         return true;

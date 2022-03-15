@@ -20,7 +20,7 @@ class DialogManger {
   }) {
     ///组装对话框实例
 
-    FBBaseOrderDialog fbBaseOrderDialog = FBBaseOrderDialog();
+    FBBaseOrderDialogDelege fbBaseOrderDialog = FBBaseOrderDialogDelege();
     fbBaseOrderDialog.widget = widget;
     fbBaseOrderDialog.isOnBackCancel = isOnBackCancel;
     fbBaseOrderDialog.isOuSideCancel = isOuSideCancel;

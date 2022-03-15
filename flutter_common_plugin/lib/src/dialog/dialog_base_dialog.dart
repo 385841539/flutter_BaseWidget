@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_common_plugin/base_lib.dart';
 
-///有序dialog基类
-class FBBaseOrderDialog {
+///有序dialog代理model
+class FBBaseOrderDialogDelege {
   //点击外部区域是否可以取消
   bool _isOuSideCancel = true;
 
@@ -12,6 +12,7 @@ class FBBaseOrderDialog {
 
   AlignmentGeometry gravity;
   Color barrierColor;
+
   //层级位置
   int _zIndex = 1;
 
@@ -21,51 +22,29 @@ class FBBaseOrderDialog {
 
   OrderDialogContainer _dialogContainer;
 
-  // ignore: unnecessary_getters_setters
   bool get isOuSideCancel => _isOuSideCancel;
 
-  // ignore: unnecessary_getters_setters
-  set isOuSideCancel(bool value) {
+  set isOuSideCancel(value) {
     _isOuSideCancel = value;
   }
 
-  // ignore: unnecessary_getters_setters
   bool get isOnBackCancel => _isOnBackCancel;
 
-  // ignore: unnecessary_getters_setters
-  set isOnBackCancel(bool value) {
-    _isOnBackCancel = value;
-  }
+  set isOnBackCancel(value) => _isOnBackCancel = value;
 
-  // ignore: unnecessary_getters_setters
   int get zIndex => _zIndex;
 
-  // ignore: unnecessary_getters_setters
-  set zIndex(int value) {
-    _zIndex = value;
-  }
+  set zIndex(value) => _zIndex = value;
 
-  // ignore: unnecessary_getters_setters
   OrderDialogContainer get dialogContainer => _dialogContainer;
 
-  // ignore: unnecessary_getters_setters
-  set dialogContainer(OrderDialogContainer value) {
-    _dialogContainer = value;
-  }
+  set dialogContainer(value) => _dialogContainer = value;
 
-  // ignore: unnecessary_getters_setters
   Widget get widget => _widget;
 
-  // ignore: unnecessary_getters_setters
-  set widget(Widget value) {
-    _widget = value;
-  }
+  set widget(value) => _widget = value;
 
-  // ignore: unnecessary_getters_setters
   BuildContext get buildContext => _buildContext;
 
-  // ignore: unnecessary_getters_setters
-  set buildContext(BuildContext value) {
-    _buildContext = value;
-  }
+  set buildContext(value) => _buildContext = value;
 }
